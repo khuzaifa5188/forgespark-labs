@@ -2,26 +2,17 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
+            targetElement.scrollIntoView({ behavior: 'smooth' });
         }
     });
 });
 
-// Add intersection observer for scroll animations
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-};
-
+// Intersection observer for scroll animations
+const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -32,10 +23,26 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 }, observerOptions);
 
-// Apply initial styles and observe cards
 document.querySelectorAll('.card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
 });
+
+// Contact form - sends message via WhatsApp
+function handleSubmit(e) {
+    e.preventDefault();
+    const name    = document.getElementById('name').value;
+    const email   = document.getElementById('email').value;
+    const project = document.getElementById('project').value;
+    const message = document.getElementById('message').value;
+
+    const text = `Hello ForgeSpark Labs!%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Project Type:* ${project}%0A*Message:* ${message}`;
+    const waLink = `https://wa.me/923189523824?text=${text}`;
+
+    window.open(waLink, '_blank');
+
+    document.getElementById('form-success').style.display = 'block';
+    e.target.reset();
+}
