@@ -1021,3 +1021,112 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Tuition Section Styles */
+.tuition-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tuition-icon-wrapper {
+    margin-bottom: 0.5rem;
+}
+
+.tuition-tutor {
+    color: var(--accent-1);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: -0.4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tuition-desc {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.tuition-books {
+    margin-bottom: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1rem;
+}
+
+.books-title {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.books-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+}
+
+.book-item {
+    text-align: center;
+}
+
+.book-item img {
+    width: 100%;
+    height: 52px;
+    object-fit: contain;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 0.2rem;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    display: block;
+}
+
+.book-item img:hover {
+    transform: translateY(-2px) scale(1.08);
+    border-color: var(--accent-1);
+}
+
+.book-item span {
+    font-size: 0.62rem;
+    color: var(--text-muted);
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tuition-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1rem;
+}
+
+.tuition-features span {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #e0e0e0;
+}
+
+.tuition-features i {
+    color: var(--accent-1);
+    font-size: 0.9rem;
+}
+
+.tuition-btn {
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+}

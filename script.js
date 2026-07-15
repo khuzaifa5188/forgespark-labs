@@ -113,3 +113,11 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Helper function to pre-select subject in the contact form dropdown
+function selectTuitionService(subject) {
+    const projectDropdown = document.getElementById('project');
+    if (projectDropdown) {
+        projectDropdown.value = `Online Tuition - ${subject}`;
+    }
+}
+
