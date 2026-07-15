@@ -203,7 +203,7 @@
 
                 <div class="card glass-card project-card">
                     <div class="project-img">
-                        <img src="images/pe_cep_thd_modulation.png" alt="SPWM Inverter THD Analysis" loading="lazy">
+                        <img src="images/pe_cep_circuit.png" alt="SPWM Inverter Circuit Diagram" loading="lazy">
                         <div class="project-overlay">
                             <a href="#team" onclick="openModal('profileModalQazi')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
                         </div>
@@ -221,7 +221,7 @@
 
                 <div class="card glass-card project-card">
                     <div class="project-img">
-                        <img src="images/edc_cep_practical_circuit.png" alt="12V DC Power Supply Hardware" loading="lazy">
+                        <img src="images/pcb1.jpg" alt="12V DC Power Supply Hardware" loading="lazy">
                         <div class="project-overlay">
                             <a href="#team" onclick="openModal('profileModalQazi')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
                         </div>
@@ -237,6 +237,60 @@
                     </div>
                 </div>
 
+                <div class="card glass-card project-card">
+                    <div class="project-img">
+                        <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_1.jpeg" alt="Cryostat System Design" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#team" onclick="openModal('profileModalSaqib')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cryostat System for HTS Coil Operation</h3>
+                        <p>Designed a cryogen-free, vacuum-insulated cryostat system in SS304. Validated structural integrity under full vacuum and 50N cryocooler load, and simulated steady-state thermal behavior at 50 K.</p>
+                        <div class="tags">
+                            <span class="tag">Cryogenics</span>
+                            <span class="tag">FEA / ANSYS</span>
+                            <span class="tag">SolidWorks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card project-card">
+                    <div class="project-img">
+                        <img src="images/WhatsApp_Image_2026-07-15_at_11.40.59_PM.jpeg" alt="Windshield Wiper Mechanism Analysis" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#team" onclick="openModal('profileModalSaqib')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kinematic Analysis of Wiper Mechanism</h3>
+                        <p>Designed and simulated wiper mechanism assemblies in SolidWorks across multiple sizes. Conducted motion analysis to evaluate sweep angle (crank vs. rocker angle), tip speed, and slider linear displacement.</p>
+                        <div class="tags">
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">Kinematics</span>
+                            <span class="tag">Motion Simulation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card project-card">
+                    <div class="project-img">
+                        <img src="images/WhatsApp_Image_2026-07-15_at_11.43.13_PM.jpeg" alt="Finite Element Analysis of Screw Jack" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#team" onclick="openModal('profileModalSaqib')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Static FEA of Automotive Screw Jack</h3>
+                        <p>Developed a 3D CAD model of an automotive screw jack assembly in SolidWorks and performed static structural analysis in ANSYS Workbench to evaluate stress, deformation, and factor of safety.</p>
+                        <div class="tags">
+                            <span class="tag">ANSYS Workbench</span>
+                            <span class="tag">FEA</span>
+                            <span class="tag">SolidWorks</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -247,15 +301,18 @@
             <p class="section-subtitle">Click on a team member to view their full profile &amp; projects.</p>
             <div class="grid team-grid">
 
-                <div class="card glass-card team-card" id="card-saqib">
-                    <div class="avatar">
-                        <i class="fa-solid fa-user-astronaut"></i>
+                <div class="card glass-card team-card clickable-team" id="card-saqib" onclick="openModal('profileModalSaqib')">
+                    <div class="avatar avatar-photo">
+                        <img src="images/saqib_profile.jpg" alt="Saqib Jamal" />
                     </div>
                     <h3>Saqib Jamal</h3>
-                    <h4>Mechanical Engineer</h4>
-                    <p>Expert in 3D CAD modeling, mechanics of materials, and precision manufacturing.</p>
+                    <h4>Mechanical Engineer &middot; PIEAS</h4>
+                    <p>Specialist in FEA/CFD simulation, cryogenic systems design, and SolidWorks CAD — from vacuum vessels to kinematic mechanisms.</p>
                     <div class="team-tags">
-                        <span class="tag">CAD</span><span class="tag">Machining</span><span class="tag">FEA</span>
+                        <span class="tag">ANSYS</span><span class="tag">SolidWorks</span><span class="tag">COMSOL</span><span class="tag">FEA</span>
+                    </div>
+                    <div class="view-profile-hint">
+                        <i class="fa-solid fa-eye"></i> View Full Portfolio
                     </div>
                 </div>
 
@@ -554,9 +611,13 @@
                                 <img src="images/edc_cep_simulated_output.png" alt="Simulated Output Waveform">
                                 <span>Simulated Output</span>
                             </div>
-                            <div class="gallery-item" onclick="window.open('images/edc_cep_practical_circuit.png', '_blank')">
-                                <img src="images/edc_cep_practical_circuit.png" alt="Practical Hardware Circuit">
-                                <span>Practical Circuit</span>
+                            <div class="gallery-item" onclick="window.open('images/pcb1.jpg', '_blank')">
+                                <img src="images/pcb1.jpg" alt="Practical Hardware Circuit">
+                                <span>Hardware Circuit</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/pcb2.jpg', '_blank')">
+                                <img src="images/pcb2.jpg" alt="Practical Hardware PCB">
+                                <span>PCB Assembly</span>
                             </div>
                             <div class="gallery-item" onclick="window.open('images/edc_cep_experimental_signals.png', '_blank')">
                                 <img src="images/edc_cep_experimental_signals.png" alt="Experimental Input/Output Signals">
@@ -573,6 +634,240 @@
                         <p>Architected residential electrical layouts using Edraw Max, incorporating circuit protection (breakers, fuses) and grounding systems to ensure strict compliance with safety standards and load-balancing requirements.</p>
                         <div class="mp-tags">
                             <span class="tag">Edraw Max</span><span class="tag">Wiring Design</span><span class="tag">Safety Compliance</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== SAQIB JAMAL PROFILE MODAL ========== -->
+    <div id="profileModalSaqib" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('profileModalSaqib')" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-header">
+                <div class="modal-avatar">
+                    <img src="images/saqib_profile.jpg" alt="Saqib Jamal" />
+                </div>
+                <div class="modal-bio">
+                    <h2>Saqib Jamal</h2>
+                    <h4>Mechanical Engineer &middot; PIEAS Graduate (2026)</h4>
+                    <p>Mechanical Engineer specializing in <strong>FEA/multiphysics simulation</strong>, <strong>cryogenic &amp; vacuum systems design</strong>, and <strong>kinematic mechanism analysis</strong>. Experienced with industrial power plants and PTPRI plasma nitriding internship. Proficient in ANSYS Workbench, COMSOL Multiphysics, SolidWorks, and AutoCAD.</p>
+                    <div class="modal-links">
+                        <a href="https://linkedin.com/in/saqibjamalkhan" target="_blank" class="modal-link linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:saqib41220@gmail.com" class="modal-link github"><i class="fa-solid fa-envelope"></i> saqib41220@gmail.com</a>
+                        <a href="https://wa.me/923165750823" target="_blank" class="modal-link whatsapp"><i class="fa-brands fa-whatsapp"></i> +92 316 5750823</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-skills">
+                <span class="skill-badge"><i class="fa-solid fa-cubes"></i> SolidWorks / AutoCAD</span>
+                <span class="skill-badge"><i class="fa-solid fa-chart-line"></i> ANSYS (Structural &amp; Thermal)</span>
+                <span class="skill-badge"><i class="fa-solid fa-wave-square"></i> COMSOL Multiphysics</span>
+                <span class="skill-badge"><i class="fa-solid fa-temperature-arrow-up"></i> Thermodynamics &amp; Heat Transfer</span>
+                <span class="skill-badge"><i class="fa-solid fa-snowflake"></i> Vacuum &amp; Cryogenic Systems</span>
+                <span class="skill-badge"><i class="fa-solid fa-industry"></i> Power Plant Operations</span>
+                <span class="skill-badge"><i class="fa-solid fa-gear"></i> Kinematics &amp; Mechanism Design</span>
+                <span class="skill-badge"><i class="fa-solid fa-atom"></i> Plasma Nitriding (Surface Treatment)</span>
+            </div>
+
+            <h3 class="modal-projects-title"><i class="fa-solid fa-folder-open"></i> My Projects</h3>
+            <div class="modal-projects">
+
+                <!-- ── PROJECT 1: CRYOSTAT FYP ── -->
+                <div class="modal-project-card" style="flex-direction: column;">
+                    <div class="mp-info" style="padding: 2rem;">
+                        <h4 style="font-size: 1.3rem;">❄️ Design &amp; Development of a Cryostat System for HTS Coil Operation</h4>
+                        <p style="margin-top: 0.5rem;"><strong>Final Year Project &mdash; PIEAS &amp; PTPRI (Sep 2025 – Jun 2026)</strong><br>
+                        Supervised by Dr. Zahoor Ahmad (PTPRI), Dr. Abdul Basit (PIEAS) &amp; Sr. Engr. Saira Gulfam (PTPRI)</p>
+
+                        <p style="margin-top: 0.8rem;">Designed and validated a <strong>cryogen-free, vacuum-insulated cryostat</strong> for operating High-Temperature Superconducting (HTS) REBCO coils at 50 K. The system uses a single-walled SS304 cylindrical shell (Ø304 mm, 600 mm long, 6 mm thick), eliminating conventional double-walled complexity.</p>
+
+                        <p style="margin-top: 0.6rem;"><strong>Structural Analysis (ANSYS):</strong> Static structural and linear buckling simulations under 101.3 kPa external pressure + 50 N cryocooler load. Max stress = <strong>28 MPa</strong> at base region (SS304 yield strength: 205 MPa). Circumferential stress: 7.70 MPa; Longitudinal: 3.85 MPa.</p>
+
+                        <p style="margin-top: 0.6rem;"><strong>Thermal Analysis (ANSYS + COMSOL):</strong> Steady-state simulation of radiative heat inleak (253 W, 2.21 m² surface, emissivity 0.25) and conductive inleak (0.088 W via three G10 supports). Design heat load: <strong>278.4 W</strong> (incl. 10% parasitic margin). Validated stable 50 K zone cooling via Hex-BN posts on cryocooler cold head.</p>
+
+                        <h5 style="margin-top: 1.2rem; margin-bottom: 0.6rem; color: var(--accent-1); font-size: 1rem;"><i class="fa-solid fa-image"></i> FYP Simulation Results &amp; CAD Figures</h5>
+                        <div class="thesis-gallery">
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.52.25_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM.jpeg" alt="Cryostat FEA Mesh">
+                                <span>Cryostat FEA Mesh Model</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_1.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_1.jpeg" alt="Equivalent Stress (ANSYS Structural)">
+                                <span>Equivalent (von Mises) Stress — ANSYS</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_2.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_2.jpeg" alt="Total Deformation (ANSYS Structural)">
+                                <span>Total Structural Deformation — ANSYS</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_3.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_3.jpeg" alt="Safety Factor Distribution">
+                                <span>Factor of Safety Distribution</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_4.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_4.jpeg" alt="Total Heat Flux — ANSYS Thermal">
+                                <span>Total Heat Flux — ANSYS Thermal</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_5.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_5.jpeg" alt="Temperature Distribution — ANSYS Thermal">
+                                <span>Temperature Distribution — ANSYS</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_6.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_6.jpeg" alt="COMSOL Transient Temperature Graph">
+                                <span>Transient Temperature — COMSOL</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.52.26_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.52.26_PM.jpeg" alt="Temperature Cooling Curve — COMSOL">
+                                <span>Cooling Curve — COMSOL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 2: FEA OEL — Multi-Component Analysis ── -->
+                <div class="modal-project-card" style="flex-direction: column;">
+                    <div class="mp-info" style="padding: 2rem;">
+                        <h4 style="font-size: 1.2rem;">🔧 Finite Element Analysis — Multi-Component Structural Study (FEA OEL)</h4>
+                        <p style="margin-top: 0.4rem;"><strong>Open-Ended Lab, FEA Course &mdash; PIEAS (2022)</strong></p>
+                        <p style="margin-top: 0.6rem;">Performed comprehensive static structural FEA on three separate mechanical assemblies using <strong>ANSYS Workbench</strong> and <strong>SolidWorks</strong>. Evaluated von Mises stress, total deformation, and factor of safety for each component under realistic loading conditions.</p>
+
+                        <p style="margin-top: 0.5rem;"><strong>Components Analyzed:</strong></p>
+                        <ul style="margin: 0.4rem 0 0.4rem 1.2rem; line-height: 1.8;">
+                            <li><strong>Carrier Member:</strong> Load = 5886 N; Max Stress = 114 MPa; Max Displacement = 3.19 mm</li>
+                            <li><strong>Screw Jack Assembly:</strong> Max Stress = 222 MPa; Max Displacement = 438 µm (hex-dominant mesh)</li>
+                            <li><strong>Wiper Arm:</strong> Load = 4738 N; Max Stress ≈ 104 MPa; Max Displacement = 82 µm</li>
+                            <li><strong>Two Bar-block Assembly:</strong> Safety Factor min = 4.26; Full static + equivalent stress validation</li>
+                        </ul>
+
+                        <h5 style="margin-top: 1.2rem; margin-bottom: 0.6rem; color: var(--accent-1); font-size: 0.95rem;"><i class="fa-solid fa-image"></i> ANSYS Simulation Figures</h5>
+                        <div class="thesis-gallery">
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.40.47_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.40.47_PM.jpeg" alt="Reference Scissor Jack Photo">
+                                <span>Reference: Automotive Scissor Jack</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.40.59_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.40.59_PM.jpeg" alt="SolidWorks Screw Jack CAD Assembly">
+                                <span>SolidWorks Screw Jack Assembly (Labeled)</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.41.20_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.41.20_PM.jpeg" alt="Carrier Member FEA Boundary Conditions">
+                                <span>Carrier Member — FEA Boundary Conditions (5886 N)</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.41.31_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.41.31_PM.jpeg" alt="Carrier Member — Von Mises Stress">
+                                <span>Carrier Member — High Stress Areas</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.41.41_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.41.41_PM.jpeg" alt="Carrier Member — Maximum Displacement">
+                                <span>Carrier Member — Maximum Displacement</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.42.05_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.42.05_PM.jpeg" alt="Wiper Arm FEA Setup (4738 N)">
+                                <span>Wiper Arm — FEA Setup (Load: 4738 N)</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.42.16_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.42.16_PM.jpeg" alt="Wiper Arm Max Stress 104 MPa">
+                                <span>Wiper Arm — Max Stress ≈ 104 MPa</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.42.25_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.42.25_PM.jpeg" alt="Wiper Arm Max Displacement 82 µm">
+                                <span>Wiper Arm — Max Displacement = 82 µm</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.43.01_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.43.01_PM.jpeg" alt="Carrier Member Stress 114 MPa">
+                                <span>Carrier Member — Max Stress = 114 MPa</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.43.13_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.43.13_PM.jpeg" alt="Carrier Member Maximum Displacement">
+                                <span>Carrier Member — Maximum Displacement</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.43.33_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.43.33_PM.jpeg" alt="Screw Jack Max Stress 222 MPa">
+                                <span>Screw Jack — Max Stress = 222 MPa</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.43.44_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.43.44_PM.jpeg" alt="Screw Jack Max Displacement 438 µm">
+                                <span>Screw Jack — Max Displacement = 438 µm</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.45.08_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.45.08_PM.jpeg" alt="Two Bar-block Assembly FEA Results">
+                                <span>Two Bar-block Assembly — Full FEA Results</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 3: WIPER MECHANISM KINEMATIC ANALYSIS ── -->
+                <div class="modal-project-card" style="flex-direction: column;">
+                    <div class="mp-info" style="padding: 2rem;">
+                        <h4 style="font-size: 1.2rem;">🚗 Kinematic &amp; Motion Analysis of Windshield Wiper Mechanism</h4>
+                        <p style="margin-top: 0.4rem;"><strong>CAD-II Lab Project &mdash; PIEAS, Spring 2025</strong></p>
+                        <p style="margin-top: 0.6rem;">Designed a four-bar linkage windshield wiper mechanism in <strong>SolidWorks</strong> in three assembly sizes (small, medium, large) to fit different vehicle footprints. Conducted kinematic motion analysis to map the relationship between crank input angle and wiper sweep angle. Analyzed rocker arm angular velocity, slider linear motion, and wiper tip velocity profile to optimize sweep efficiency. BOM was prepared for all 9 sub-components.</p>
+
+                        <h5 style="margin-top: 1.2rem; margin-bottom: 0.6rem; color: var(--accent-1); font-size: 0.95rem;"><i class="fa-solid fa-image"></i> SolidWorks CAD &amp; Motion Study Figures</h5>
+                        <div class="thesis-gallery">
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.47.09_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.47.09_PM.jpeg" alt="Wiper Assembly Drawing with BOM">
+                                <span>Assembly Drawing with 9-Part BOM</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.47.59_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.47.59_PM.jpeg" alt="Wiper 3D Assembly — Mid Sweep Position">
+                                <span>SolidWorks 3D Assembly — Mid Sweep</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/WhatsApp_Image_2026-07-15_at_11.48.15_PM.jpeg', '_blank')">
+                                <img src="images/WhatsApp_Image_2026-07-15_at_11.48.15_PM.jpeg" alt="Wiper 3D Assembly — Full Up Sweep Position">
+                                <span>SolidWorks 3D Assembly — Full Up Sweep</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 4: PLASMA NITRIDING INTERNSHIP ── -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>⚡ Plasma Nitriding System Design &amp; COMSOL Simulation</h4>
+                        <p><strong>PTPRI Internship (Jun – Aug 2025)</strong><br>
+                        Designed and simulated a plasma nitriding vacuum system in SolidWorks and COMSOL for SS316 surface treatment. Evaluated electric field distribution, ion behavior, and thermal nitrogen diffusion to optimize surface hardening performance.</p>
+                        <div class="mp-tags">
+                            <span class="tag">COMSOL</span><span class="tag">SolidWorks</span><span class="tag">Plasma Nitriding</span><span class="tag">SS316 Hardening</span><span class="tag">PTPRI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 5: GREEN REFRIGERATION ── -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>🌱 Green Refrigeration System &mdash; Thermodynamic Cycle Design</h4>
+                        <p>Designed an eco-friendly refrigeration cycle concept eliminating harmful chemical refrigerants. Applied thermodynamic equations to evaluate the Coefficient of Performance (COP) and compared performance margins against vapor compression refrigeration systems (VCRS).</p>
+                        <div class="mp-tags">
+                            <span class="tag">Thermodynamics</span><span class="tag">COP Evaluation</span><span class="tag">Eco-friendly Design</span><span class="tag">VCRS Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 6: LiFePO4 BATTERY PACK ── -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>🔋 EV Shuttle &mdash; LiFePO4 Battery Pack Sizing &amp; Design</h4>
+                        <p>Designed a LiFePO4 battery pack based on EV shuttle energy and power demand calculations. Performed capacity sizing, cell configuration, thermal dissipation calculations, and full electrical/mechanical pack integration layout.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Battery Pack Design</span><span class="tag">LiFePO4</span><span class="tag">Thermal Analysis</span><span class="tag">EV Shuttle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 7: POWER PLANT INTERNSHIP ── -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>🏭 Power Generation &amp; Plant Operations Intern</h4>
+                        <p><strong>Almoiz Industries Limited (Unit-1), Aug – Sep 2025</strong><br>
+                        Hands-on exposure to sugar production plant and power house operations. Studied steam boiler, steam turbine, and cooling tower systems. Analyzed energy conversion efficiency and steam cycle thermodynamics to optimize overall plant performance.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Power Generation</span><span class="tag">Steam Cycle</span><span class="tag">Boiler &amp; Turbine</span><span class="tag">Plant Operations</span>
                         </div>
                     </div>
                 </div>
