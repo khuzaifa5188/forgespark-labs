@@ -79,33 +79,37 @@ if (hamburger && navLinks) {
     });
 }
 
-// Modal handling for Team member profile
-const modal = document.getElementById('profileModal');
-
-function openProfile() {
+// Generic Modal Handling for Team member profiles
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
     if (modal) {
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Disable background scrolling
     }
 }
 
-function closeProfile() {
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
     if (modal) {
         modal.classList.remove('active');
         document.body.style.overflow = ''; // Enable background scrolling
     }
 }
 
-function closeProfileOnBg(event) {
-    if (event && event.target === modal) {
-        closeProfile();
+// Close modals on background click
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal-overlay')) {
+        closeModal(e.target.id);
     }
-}
+});
 
-// Close modal on Escape key
+// Close modals on Escape key
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
-        closeProfile();
+    if (e.key === 'Escape') {
+        const activeModal = document.querySelector('.modal-overlay.active');
+        if (activeModal) {
+            closeModal(activeModal.id);
+        }
     }
 });
 

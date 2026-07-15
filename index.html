@@ -183,6 +183,24 @@
                     </div>
                 </div>
 
+                <div class="card glass-card project-card">
+                    <div class="project-img">
+                        <img src="images/dfig_sc_system.png" alt="Distribution Grid Renewable Optimization" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/khuzaifa5188/forgespark-labs" target="_blank" class="overlay-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Distribution Grid Optimization</h3>
+                        <p>Simulated and optimized IEEE 14-bus distribution grids to integrate renewable energy resources. Combined DFIG wind turbines &amp; synchronous condensers to reduce losses by 66.4%.</p>
+                        <div class="tags">
+                            <span class="tag">Power Systems</span>
+                            <span class="tag">DFIG Wind</span>
+                            <span class="tag">ETAP / Simulink</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -205,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card team-card clickable-team" id="card-khuzaifa" onclick="openProfile()">
+                <div class="card glass-card team-card clickable-team" id="card-khuzaifa" onclick="openModal('profileModal')">
                     <div class="avatar avatar-photo">
                         <img src="images/khuzaifa_profile.jpg" alt="Muhammad Khuzaifa" />
                     </div>
@@ -214,6 +232,21 @@
                     <p>Specializes in embedded systems, IoT architecture, and training AI models on MCUs.</p>
                     <div class="team-tags">
                         <span class="tag">Embedded</span><span class="tag">IoT</span><span class="tag">AI</span>
+                    </div>
+                    <div class="view-profile-hint">
+                        <i class="fa-solid fa-eye"></i> View Full Portfolio
+                    </div>
+                </div>
+
+                <div class="card glass-card team-card clickable-team" id="card-qazi" onclick="openModal('profileModalQazi')">
+                    <div class="avatar avatar-photo">
+                        <img src="images/qazi_sami_profile.jpg" alt="Qazi Samiullah" />
+                    </div>
+                    <h3>Qazi Samiullah</h3>
+                    <h4>Electrical Engineer</h4>
+                    <p>Specializes in power systems, renewable grid integration, and ETAP/Simulink modeling.</p>
+                    <div class="team-tags">
+                        <span class="tag">Power Systems</span><span class="tag">Simulation</span><span class="tag">Renewables</span>
                     </div>
                     <div class="view-profile-hint">
                         <i class="fa-solid fa-eye"></i> View Full Portfolio
@@ -237,9 +270,9 @@
     </section>
 
     <!-- ========== MUHAMMAD KHUZAIFA PROFILE MODAL ========== -->
-    <div id="profileModal" class="modal-overlay" onclick="closeProfileOnBg(event)">
+    <div id="profileModal" class="modal-overlay">
         <div class="modal-box">
-            <button class="modal-close" onclick="closeProfile()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <button class="modal-close" onclick="closeModal('profileModal')" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
 
             <div class="modal-header">
                 <div class="modal-avatar">
@@ -351,6 +384,120 @@
                             <span class="tag">Computer Vision</span><span class="tag">Firmware</span><span class="tag">MCU</span><span class="tag">C++</span>
                         </div>
                         <a href="https://github.com/khuzaifa5188/human-detection-firmware" target="_blank" class="mp-link"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== QAZI SAMIULLAH PROFILE MODAL ========== -->
+    <div id="profileModalQazi" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('profileModalQazi')" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-header">
+                <div class="modal-avatar">
+                    <img src="images/qazi_sami_profile.jpg" alt="Qazi Samiullah" />
+                </div>
+                <div class="modal-bio">
+                    <h2>Qazi Samiullah</h2>
+                    <h4>Electrical Engineer &middot; PIEAS Graduate (Power Engineering)</h4>
+                    <p>Passionate about power systems, renewable energy integration, and sustainable grid solutions. Hands-on experience with ETAP, MATLAB/Simulink, and PSCAD for power system modeling, load flow, and fault analysis.</p>
+                    <div class="modal-links">
+                        <a href="https://www.linkedin.com/in/qazi-samiullah-afridi-897a18240/" target="_blank" class="modal-link linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:qazisamiullahafridi@gmail.com" class="modal-link github"><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a href="https://wa.me/923255906326" target="_blank" class="modal-link whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-skills">
+                <span class="skill-badge"><i class="fa-solid fa-bolt"></i> Power System Analysis</span>
+                <span class="skill-badge"><i class="fa-solid fa-chart-line"></i> ETAP Simulation</span>
+                <span class="skill-badge"><i class="fa-solid fa-code"></i> MATLAB / Simulink</span>
+                <span class="skill-badge"><i class="fa-solid fa-wave-square"></i> PSCAD Simulation</span>
+                <span class="skill-badge"><i class="fa-solid fa-solar-panel"></i> Renewable Energy Integration</span>
+                <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Electrical Distribution Systems</span>
+                <span class="skill-badge"><i class="fa-solid fa-calculator"></i> Mathematics Tutoring</span>
+            </div>
+
+            <h3 class="modal-projects-title"><i class="fa-solid fa-folder-open"></i> My Projects &amp; Thesis</h3>
+            <div class="modal-projects">
+
+                <!-- Thesis Project -->
+                <div class="modal-project-card" style="flex-direction: column;">
+                    <div class="mp-info" style="padding: 2rem;">
+                        <h4 style="font-size: 1.3rem;">⚡ Improvement of Efficiency of Distribution Network with Renewable Energy Resources</h4>
+                        <p style="margin-top: 0.5rem;"><strong>Final Year Thesis (PIEAS, June 2026)</strong><br>
+                        Supervised by Dr. Babar Hussain &amp; Co-Supervised by Dr. M. Abubakar</p>
+                        
+                        <p style="margin-top: 0.8rem;">This research tackled technical losses (line resistance, reactive power flow, and voltage drops) in electrical distribution networks in Pakistan. The network was simulated under four scenarios on the IEEE 14-bus test system: uncompensated, with synchronous condensers only, with DFIG wind turbines only, and with a combined DFIG &amp; Synchronous Condenser configuration.</p>
+                        
+                        <p style="margin-top: 0.5rem;"><strong>Key Results:</strong> The combined configuration achieved the best performance, drastically reducing total real power losses from <strong>21.88 MW to 7.35 MW (a 66.4% reduction)</strong>, improving system efficiency to <strong>97.24%</strong>, and keeping all bus voltages within the safe 0.95 to 1.05 pu range.</p>
+                        
+                        <h5 style="margin-top: 1.2rem; margin-bottom: 0.6rem; color: var(--accent-1); font-size: 1rem;"><i class="fa-solid fa-image"></i> Thesis Diagrams &amp; Simulation Figures (Click to view full size)</h5>
+                        
+                        <div class="thesis-gallery">
+                            <div class="gallery-item" onclick="window.open('images/ieee_14bus.png', '_blank')">
+                                <img src="images/ieee_14bus.png" alt="IEEE 14-bus Test System Layout">
+                                <span>IEEE 14-bus Layout</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/dfig_sc_system.png', '_blank')">
+                                <img src="images/dfig_sc_system.png" alt="DFIG & SC Configuration">
+                                <span>DFIG &amp; SC Configuration</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/voltage_profile.png', '_blank')">
+                                <img src="images/voltage_profile.png" alt="Voltage Profile Curves">
+                                <span>Voltage Profiles</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/power_loss_comparison.png', '_blank')">
+                                <img src="images/power_loss_comparison.png" alt="Real/Reactive Loss Comparison">
+                                <span>Power Losses</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/efficiency_comparison.png', '_blank')">
+                                <img src="images/efficiency_comparison.png" alt="System Efficiency Comparison">
+                                <span>System Efficiency</span>
+                            </div>
+                            <div class="gallery-item" onclick="window.open('images/substation_visit.png', '_blank')">
+                                <img src="images/substation_visit.png" alt="132KV Substation Field Visit Nilore">
+                                <span>Substation Field Visit</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/khuzaifa5188/forgespark-labs" target="_blank" class="mp-link" style="margin-top: 1.2rem;"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>📈 THD Analysis of SPWM Inverters</h4>
+                        <p>Evaluated Total Harmonic Distortion (THD) using MATLAB/Simulink to design filtering techniques that minimize waveform distortion and improve power conversion quality in Sinusoidal Pulse Width Modulated (SPWM) inverters.</p>
+                        <div class="mp-tags">
+                            <span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">Power Electronics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>🔌 Regulated 12V/0.5A DC Power Supply</h4>
+                        <p>Developed a linear power supply stage—including rectification and zener-based regulation—to deliver a stable DC output with minimized ripple voltage for low-power electronic applications.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Hardware</span><span class="tag">Circuit Design</span><span class="tag">Zener Regulation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>🏠 Residential House Wiring &amp; Electrical Safety</h4>
+                        <p>Architected residential electrical layouts using Edraw Max, incorporating circuit protection (breakers, fuses) and grounding systems to ensure strict compliance with safety standards and load-balancing requirements.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Edraw Max</span><span class="tag">Wiring Design</span><span class="tag">Safety Compliance</span>
+                        </div>
                     </div>
                 </div>
 
