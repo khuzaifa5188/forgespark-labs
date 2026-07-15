@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForgeSpark Labs | Complete Mechatronics Solutions</title>
-    <meta name="description" content="We build complete hardware and software solutions. From mechanical prototyping to IoT and AI integration.">
+    <meta name="description" content="We build complete hardware and software solutions. From mechanical prototyping to IoT and AI integration. PIEAS alumni team.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,14 @@
             <li><a href="#team">Team</a></li>
             <li><a href="#contact" class="btn-primary">Hire Us</a></li>
         </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1 class="fade-in-up">Bringing Ideas to Life: <br><span class="gradient-text">Hardware, IoT & AI</span></h1>
+            <h1 class="fade-in-up">Bringing Ideas to Life: <br><span class="gradient-text">Hardware, IoT &amp; AI</span></h1>
             <p class="fade-in-up delay-1">We are a complete Mechatronics product development team. From CAD and machining to PCBs, IoT, and AI models.</p>
             <div class="hero-buttons fade-in-up delay-2">
                 <a href="#portfolio" class="btn-secondary">View Our Work</a>
@@ -44,17 +47,17 @@
             <div class="grid">
                 <div class="card glass-card">
                     <i class="fa-solid fa-microchip card-icon"></i>
-                    <h3>Electronics & IoT</h3>
+                    <h3>Electronics &amp; IoT</h3>
                     <p>Custom PCB design, microcontroller programming (ESP32, STM32), and smart sensor integration.</p>
                 </div>
                 <div class="card glass-card">
                     <i class="fa-solid fa-robot card-icon"></i>
-                    <h3>AI & Machine Learning</h3>
+                    <h3>AI &amp; Machine Learning</h3>
                     <p>Edge AI, computer vision, and predictive models deployed directly on MCUs for real-time processing.</p>
                 </div>
                 <div class="card glass-card">
                     <i class="fa-solid fa-gears card-icon"></i>
-                    <h3>Mechanical & Prototyping</h3>
+                    <h3>Mechanical &amp; Prototyping</h3>
                     <p>3D CAD modeling, structural analysis, and physical manufacturing using lathe, milling, and 3D printing.</p>
                 </div>
                 <div class="card glass-card">
@@ -69,31 +72,116 @@
     <section id="portfolio" class="portfolio section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="grid">
+            <div class="grid portfolio-grid">
+
                 <div class="card glass-card project-card">
-                    <div class="project-img" style="background: linear-gradient(45deg, #1f4037, #99f2c8);"></div>
+                    <div class="project-img">
+                        <img src="images/fire_detection_v1.jpg" alt="Fire Detection AI System" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/khuzaifa5188" target="_blank" class="overlay-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fire Detection AI System</h3>
+                        <p>Real-time fire detection using computer vision deployed on embedded hardware. Achieves 91% confidence using object detection inference on-device.</p>
+                        <div class="tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Edge AI</span>
+                            <span class="tag">ESP32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card project-card">
+                    <div class="project-img">
+                        <img src="images/fpga_vga_real.jpg" alt="FPGA VGA Game Engine" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/khuzaifa5188" target="_blank" class="overlay-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FPGA VGA Game Engine</h3>
+                        <p>A real-time VGA rendering engine built from scratch on Xilinx Spartan-3E FPGA using Verilog HDL. Features zero-latency pixel pipeline at 640x480 @ 60Hz.</p>
+                        <div class="tags">
+                            <span class="tag">FPGA</span>
+                            <span class="tag">Verilog HDL</span>
+                            <span class="tag">VGA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card project-card">
+                    <div class="project-img">
+                        <img src="images/drone_v2.jpg" alt="Autonomous Drone" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/khuzaifa5188" target="_blank" class="overlay-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Autonomous Drone — ESP32 MOD</h3>
+                        <p>Custom-built quadrotor drone with Pixhawk flight controller and ESP32 advanced mod. Features autonomous navigation and wireless telemetry.</p>
+                        <div class="tags">
+                            <span class="tag">Drone</span>
+                            <span class="tag">Pixhawk</span>
+                            <span class="tag">ESP32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card project-card">
+                    <div class="project-img">
+                        <img src="images/weather_station.jpg" alt="IoT Weather Station" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/khuzaifa5188/low_cost_IoT_weather_station" target="_blank" class="overlay-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Low-Cost IoT Weather Station</h3>
+                        <p>Affordable IoT weather monitoring station displaying real-time temperature and pressure on OLED. Built with ESP32 and BME280 sensor.</p>
+                        <div class="tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">ESP32</span>
+                            <span class="tag">OLED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card project-card">
+                    <div class="project-img project-img-icon" style="background: linear-gradient(135deg, #1f4037, #99f2c8);">
+                        <i class="fa-solid fa-cow project-placeholder-icon"></i>
+                        <div class="project-overlay">
+                            <a href="https://github.com/khuzaifa5188/livestock-behavior-classification-cpp-mcu" target="_blank" class="overlay-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
                     <div class="project-info">
                         <h3>Livestock Behavior Classification</h3>
-                        <p>An IoT/AI system using edge computing (C++ on MCU) to monitor and classify cow behavior (grazing, walking, resting) in real-time.</p>
-                        <span class="tag">C++</span> <span class="tag">Edge AI</span> <span class="tag">IoT</span>
+                        <p>TinyML system using Edge Impulse and ESP32-S3 to classify cattle behavior from IMU sensor data in real-time on-device.</p>
+                        <div class="tags">
+                            <span class="tag">TinyML</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Edge Impulse</span>
+                        </div>
                     </div>
                 </div>
+
                 <div class="card glass-card project-card">
-                    <div class="project-img" style="background: linear-gradient(45deg, #2b5876, #4e4376);"></div>
+                    <div class="project-img">
+                        <img src="images/fpga_vga_lab.jpg" alt="Human Detection Firmware" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/khuzaifa5188/human-detection-firmware" target="_blank" class="overlay-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
                     <div class="project-info">
-                        <h3>[Mechanical FYP Name]</h3>
-                        <p>Details about the mechanical engineering final year project (e.g., custom robotic arm or automated machine).</p>
-                        <span class="tag">CAD</span> <span class="tag">Machining</span>
+                        <h3>Human Detection Firmware</h3>
+                        <p>Embedded firmware for real-time human presence detection on resource-constrained microcontrollers. Optimized for low power always-on operation.</p>
+                        <div class="tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">MCU</span>
+                            <span class="tag">C++</span>
+                        </div>
                     </div>
                 </div>
-                <div class="card glass-card project-card">
-                    <div class="project-img" style="background: linear-gradient(45deg, #ff9966, #ff5e62);"></div>
-                    <div class="project-info">
-                        <h3>[Hardware Prototype]</h3>
-                        <p>A placeholder for another combined mechatronics project you have built or will build.</p>
-                        <span class="tag">Mechatronics</span> <span class="tag">Hardware</span>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -101,35 +189,179 @@
     <section id="team" class="team section">
         <div class="container">
             <h2 class="section-title">The PIEAS Alumni Team</h2>
+            <p class="section-subtitle">Click on a team member to view their full profile &amp; projects.</p>
             <div class="grid team-grid">
-                <div class="card glass-card team-card">
-                    <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+
+                <div class="card glass-card team-card" id="card-saqib">
+                    <div class="avatar">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
                     <h3>Saqib Jamal</h3>
                     <h4>Mechanical Engineer</h4>
                     <p>Expert in 3D CAD modeling, mechanics of materials, and precision manufacturing.</p>
+                    <div class="team-tags">
+                        <span class="tag">CAD</span><span class="tag">Machining</span><span class="tag">FEA</span>
+                    </div>
                 </div>
-                <div class="card glass-card team-card">
-                    <div class="avatar"><i class="fa-solid fa-user-gear"></i></div>
+
+                <div class="card glass-card team-card clickable-team" id="card-khuzaifa" onclick="openProfile()">
+                    <div class="avatar avatar-photo">
+                        <img src="images/khuzaifa_profile.jpg" alt="Muhammad Khuzaifa" />
+                    </div>
                     <h3>Muhammad Khuzaifa</h3>
                     <h4>Electrical Engineer</h4>
                     <p>Specializes in embedded systems, IoT architecture, and training AI models on MCUs.</p>
+                    <div class="team-tags">
+                        <span class="tag">Embedded</span><span class="tag">IoT</span><span class="tag">AI</span>
+                    </div>
+                    <div class="view-profile-hint">
+                        <i class="fa-solid fa-eye"></i> View Full Portfolio
+                    </div>
                 </div>
-                <div class="card glass-card team-card">
-                    <div class="avatar"><i class="fa-solid fa-user-shield"></i></div>
+
+                <div class="card glass-card team-card" id="card-hammad">
+                    <div class="avatar">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
                     <h3>Hammad Ali</h3>
                     <h4>Mechanical Engineer</h4>
                     <p>Specializes in lathe/milling operations, hardware assembly, and structural design.</p>
+                    <div class="team-tags">
+                        <span class="tag">Machining</span><span class="tag">Assembly</span><span class="tag">Structural</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <!-- ========== MUHAMMAD KHUZAIFA PROFILE MODAL ========== -->
+    <div id="profileModal" class="modal-overlay" onclick="closeProfileOnBg(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeProfile()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-header">
+                <div class="modal-avatar">
+                    <img src="images/khuzaifa_profile.jpg" alt="Muhammad Khuzaifa" />
+                </div>
+                <div class="modal-bio">
+                    <h2>Muhammad Khuzaifa</h2>
+                    <h4>Electrical Engineer &middot; PIEAS Graduate</h4>
+                    <p>Passionate about building intelligent embedded systems. Specializes in TinyML, computer vision, FPGA design, IoT infrastructure, and drone systems.</p>
+                    <div class="modal-links">
+                        <a href="https://www.linkedin.com/in/muhammad-khuzaifa/" target="_blank" class="modal-link linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/khuzaifa5188" target="_blank" class="modal-link github"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://wa.me/923189523824" target="_blank" class="modal-link whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-skills">
+                <span class="skill-badge"><i class="fa-solid fa-microchip"></i> ESP32 / STM32</span>
+                <span class="skill-badge"><i class="fa-solid fa-brain"></i> TinyML / Edge AI</span>
+                <span class="skill-badge"><i class="fa-solid fa-eye"></i> Computer Vision</span>
+                <span class="skill-badge"><i class="fa-solid fa-wave-square"></i> FPGA / Verilog</span>
+                <span class="skill-badge"><i class="fa-solid fa-helicopter"></i> Drone Systems</span>
+                <span class="skill-badge"><i class="fa-solid fa-cloud"></i> IoT Architecture</span>
+                <span class="skill-badge"><i class="fa-brands fa-python"></i> Python / C++</span>
+            </div>
+
+            <h3 class="modal-projects-title"><i class="fa-solid fa-folder-open"></i> My Projects</h3>
+            <div class="modal-projects">
+
+                <div class="modal-project-card">
+                    <div class="mp-img">
+                        <img src="images/fire_detection_v1.jpg" alt="Fire Detection AI" loading="lazy">
+                    </div>
+                    <div class="mp-info">
+                        <h4>&#x1F525; Fire Detection AI System</h4>
+                        <p>Real-time fire detection using YOLO-based object detection deployed on ESP32-CAM. Achieves 91% detection confidence with bounding box overlay on live video feed.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Computer Vision</span><span class="tag">ESP32-CAM</span><span class="tag">Edge AI</span><span class="tag">C++</span>
+                        </div>
+                        <a href="https://github.com/khuzaifa5188" target="_blank" class="mp-link"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+
+                <div class="modal-project-card">
+                    <div class="mp-img">
+                        <img src="images/fpga_vga_real.jpg" alt="FPGA VGA Game Engine" loading="lazy">
+                    </div>
+                    <div class="mp-info">
+                        <h4>&#x1F3AE; FPGA VGA Game Engine</h4>
+                        <p>Designed a complete VGA rendering pipeline on Xilinx Spartan-3E FPGA using Verilog HDL. Features zero-latency video pipeline, VESA-spec timing FSMs, and pixel clock generation at 640x480 @ 60Hz.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Xilinx Spartan-3E</span><span class="tag">Verilog HDL</span><span class="tag">VGA 640x480</span>
+                        </div>
+                        <a href="https://github.com/khuzaifa5188" target="_blank" class="mp-link"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+
+                <div class="modal-project-card">
+                    <div class="mp-img">
+                        <img src="images/drone_v2.jpg" alt="Autonomous Drone" loading="lazy">
+                    </div>
+                    <div class="mp-info">
+                        <h4>&#x1F681; Autonomous Drone — ESP32 Mod</h4>
+                        <p>Built a custom quadrotor drone with Pixhawk flight controller and a custom ESP32 Advanced Mod board. Supports autonomous navigation, wireless telemetry, and real-time sensor fusion.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Quadrotor</span><span class="tag">Pixhawk</span><span class="tag">ESP32</span><span class="tag">MAVLink</span>
+                        </div>
+                        <a href="https://github.com/khuzaifa5188" target="_blank" class="mp-link"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+
+                <div class="modal-project-card">
+                    <div class="mp-img">
+                        <img src="images/weather_station.jpg" alt="IoT Weather Station" loading="lazy">
+                    </div>
+                    <div class="mp-info">
+                        <h4>&#x1F326;&#xFE0F; Low-Cost IoT Weather Station</h4>
+                        <p>Affordable IoT weather monitoring station using ESP32 and BME280 sensor. Displays real-time temperature, pressure, and humidity on OLED with WiFi data logging capability.</p>
+                        <div class="mp-tags">
+                            <span class="tag">ESP32</span><span class="tag">BME280</span><span class="tag">OLED</span><span class="tag">IoT</span>
+                        </div>
+                        <a href="https://github.com/khuzaifa5188/low_cost_IoT_weather_station" target="_blank" class="mp-link"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+
+                <div class="modal-project-card">
+                    <div class="mp-img mp-img-icon" style="background: linear-gradient(135deg,#1f4037,#99f2c8);">
+                        <i class="fa-solid fa-cow mp-placeholder-icon"></i>
+                    </div>
+                    <div class="mp-info">
+                        <h4>&#x1F404; Livestock Behavior Classification</h4>
+                        <p>TinyML project using Edge Impulse and C++ on ESP32-S3 to classify cattle behavior (grazing, walking, resting) from IMU sensor data in real-time without cloud connectivity.</p>
+                        <div class="mp-tags">
+                            <span class="tag">TinyML</span><span class="tag">Edge Impulse</span><span class="tag">ESP32-S3</span><span class="tag">C++</span>
+                        </div>
+                        <a href="https://github.com/khuzaifa5188/livestock-behavior-classification-cpp-mcu" target="_blank" class="mp-link"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+
+                <div class="modal-project-card">
+                    <div class="mp-img">
+                        <img src="images/drone_v1.jpg" alt="Human Detection Firmware" loading="lazy">
+                    </div>
+                    <div class="mp-info">
+                        <h4>&#x1F464; Human Detection Firmware</h4>
+                        <p>Embedded firmware for real-time human presence detection on resource-constrained microcontrollers. Designed for low-power always-on operation with high accuracy edge inference.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Computer Vision</span><span class="tag">Firmware</span><span class="tag">MCU</span><span class="tag">C++</span>
+                        </div>
+                        <a href="https://github.com/khuzaifa5188/human-detection-firmware" target="_blank" class="mp-link"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <section id="contact" class="contact section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <p class="section-subtitle">We are currently accepting new projects. Let's build something amazing together!</p>
             <div class="contact-wrapper">
-                <!-- Contact Buttons -->
                 <div class="contact-buttons">
                     <a href="https://wa.me/923189523824" target="_blank" class="contact-btn whatsapp-btn">
                         <i class="fa-brands fa-whatsapp"></i>
@@ -154,7 +386,6 @@
                     </a>
                 </div>
 
-                <!-- Contact Form -->
                 <form class="contact-form glass-card" onsubmit="handleSubmit(event)">
                     <h3>Send us a Message</h3>
                     <div class="form-group">
@@ -169,9 +400,9 @@
                         <label for="project">Project Type</label>
                         <select id="project">
                             <option value="">Select a service...</option>
-                            <option>Electronics & IoT</option>
-                            <option>AI & Machine Learning</option>
-                            <option>Mechanical & Prototyping</option>
+                            <option>Electronics &amp; IoT</option>
+                            <option>AI &amp; Machine Learning</option>
+                            <option>Mechanical &amp; Prototyping</option>
                             <option>End-to-End Product</option>
                         </select>
                     </div>
@@ -180,7 +411,7 @@
                         <textarea id="message" rows="4" placeholder="Tell us about your idea..." required></textarea>
                     </div>
                     <button type="submit" class="btn-primary submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-                    <p class="form-note" id="form-success" style="display:none;">✅ Message sent! We'll contact you on WhatsApp soon.</p>
+                    <p class="form-note" id="form-success" style="display:none;">&#x2705; Message sent! We'll contact you on WhatsApp soon.</p>
                 </form>
             </div>
         </div>

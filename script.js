@@ -46,3 +46,66 @@ function handleSubmit(e) {
     document.getElementById('form-success').style.display = 'block';
     e.target.reset();
 }
+
+// Mobile navigation hamburger toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = hamburger.querySelector('i');
+        if (icon) {
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+
+    // Close menu when clicking links
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            const icon = hamburger.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+    });
+}
+
+// Modal handling for Team member profile
+const modal = document.getElementById('profileModal');
+
+function openProfile() {
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Disable background scrolling
+    }
+}
+
+function closeProfile() {
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = ''; // Enable background scrolling
+    }
+}
+
+function closeProfileOnBg(event) {
+    if (event && event.target === modal) {
+        closeProfile();
+    }
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+        closeProfile();
+    }
+});
+
