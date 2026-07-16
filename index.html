@@ -30,20 +30,101 @@
         </button>
     </nav>
 
+
     <header id="home" class="hero">
         <canvas id="hero-canvas"></canvas>
+
         <div class="hero-content">
-            <h1 class="fade-in-up">Bringing Ideas to Life: <br><span class="gradient-text">Hardware, IoT &amp; AI</span></h1>
-            <p class="fade-in-up delay-1">We are a complete Mechatronics product development team. From CAD and machining to PCBs, IoT, and AI models.</p>
-            <div class="hero-buttons fade-in-up delay-2">
-                <a href="#portfolio" class="btn-secondary">View Our Work</a>
-                <a href="#contact" class="btn-primary">Start a Project</a>
+            <!-- Top badge -->
+            <div class="hero-badge hero-anim" style="animation-delay:0.1s">
+                <span class="badge-dot"></span>
+                <span>PIEAS Alumni Team &mdash; Mechatronics Experts</span>
+            </div>
+
+            <!-- Main heading -->
+            <h1 class="hero-anim" style="animation-delay:0.25s">Bringing Ideas to Life:<br><span class="gradient-text">Hardware, IoT &amp; AI</span></h1>
+
+            <!-- Subtitle -->
+            <p class="hero-sub hero-anim" style="animation-delay:0.4s">We are a complete Mechatronics product development team. From CAD and machining to PCBs, firmware, IoT, and Edge AI &mdash; we deliver end-to-end hardware solutions.</p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-buttons hero-anim" style="animation-delay:0.55s">
+                <a href="#portfolio" class="btn-secondary"><i class="fa-solid fa-folder-open"></i> View Our Work</a>
+                <a href="#contact" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Start a Project</a>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats hero-anim" style="animation-delay:0.7s">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">PIEAS Engineers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Domains Covered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="hero-tech-stack hero-anim" style="animation-delay:0.85s">
+                <span class="tech-label">Tech Stack:</span>
+                <div class="tech-icons">
+                    <span class="tech-pill"><i class="fa-solid fa-microchip"></i> ESP32</span>
+                    <span class="tech-pill"><i class="fa-solid fa-brain"></i> TinyML</span>
+                    <span class="tech-pill"><i class="fa-solid fa-gears"></i> SolidWorks</span>
+                    <span class="tech-pill"><i class="fa-solid fa-bolt"></i> MATLAB</span>
+                    <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="tech-pill"><i class="fa-solid fa-wave-square"></i> FPGA</span>
+                </div>
             </div>
         </div>
-        <div class="hero-graphic fade-in-up delay-3">
-            <div class="glass-orb"></div>
+
+        <!-- Right Side: Floating Project Cards -->
+        <div class="hero-graphic">
+            <div class="hero-card-stack">
+                <div class="hero-float-card card-1">
+                    <div class="hfc-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="hfc-info">
+                        <span class="hfc-title">Edge AI Deployed</span>
+                        <span class="hfc-sub">91% Detection Accuracy</span>
+                    </div>
+                    <span class="hfc-badge live">LIVE</span>
+                </div>
+                <div class="hero-float-card card-2">
+                    <div class="hfc-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="hfc-info">
+                        <span class="hfc-title">IoT Weather Station</span>
+                        <span class="hfc-sub">ESP32 + BME280 + OLED</span>
+                    </div>
+                    <span class="hfc-badge done">DONE</span>
+                </div>
+                <div class="hero-float-card card-3">
+                    <div class="hfc-icon"><i class="fa-solid fa-helicopter"></i></div>
+                    <div class="hfc-info">
+                        <span class="hfc-title">Autonomous Drone</span>
+                        <span class="hfc-sub">Pixhawk + ESP32 Mod</span>
+                    </div>
+                    <span class="hfc-badge done">DONE</span>
+                </div>
+                <div class="hero-orb-wrap">
+                    <div class="glass-orb"></div>
+                </div>
+            </div>
         </div>
     </header>
+
+
 
     <section id="services" class="services section">
         <div class="container">
