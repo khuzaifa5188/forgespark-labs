@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,7 +20,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#tuition">Online Tuition</a></li>
+            <li><a href="#tuition">Academy</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#contact" class="btn-primary">Hire Us</a></li>
         </ul>
@@ -30,6 +30,7 @@
     </nav>
 
     <header id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
         <div class="hero-content">
             <h1 class="fade-in-up">Bringing Ideas to Life: <br><span class="gradient-text">Hardware, IoT &amp; AI</span></h1>
             <p class="fade-in-up delay-1">We are a complete Mechatronics product development team. From CAD and machining to PCBs, IoT, and AI models.</p>
@@ -74,9 +75,17 @@
     <section id="portfolio" class="portfolio section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="iot">IoT &amp; Robotics</button>
+                <button class="filter-btn" data-filter="mechanical">Mechanical &amp; FEA</button>
+                <button class="filter-btn" data-filter="power-electronics">Power &amp; Electronics</button>
+            </div>
+
             <div class="grid portfolio-grid">
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="iot">
                     <div class="project-img">
                         <img src="images/fire_detection_v1.jpg" alt="Fire Detection AI System" loading="lazy">
                         <div class="project-overlay">
@@ -94,7 +103,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="power-electronics">
                     <div class="project-img">
                         <img src="images/fpga_vga_real.jpg" alt="FPGA VGA Game Engine" loading="lazy">
                         <div class="project-overlay">
@@ -112,7 +121,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="iot">
                     <div class="project-img">
                         <img src="images/drone_v2.jpg" alt="Autonomous Drone" loading="lazy">
                         <div class="project-overlay">
@@ -130,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="iot">
                     <div class="project-img">
                         <img src="images/weather_station.jpg" alt="IoT Weather Station" loading="lazy">
                         <div class="project-overlay">
@@ -148,7 +157,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="iot">
                     <div class="project-img project-img-icon" style="background: linear-gradient(135deg, #1f4037, #99f2c8);">
                         <i class="fa-solid fa-cow project-placeholder-icon"></i>
                         <div class="project-overlay">
@@ -166,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="iot">
                     <div class="project-img">
                         <img src="images/fpga_vga_lab.jpg" alt="Human Detection Firmware" loading="lazy">
                         <div class="project-overlay">
@@ -184,7 +193,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="power-electronics">
                     <div class="project-img">
                         <img src="images/dfig_sc_system.png" alt="Distribution Grid Renewable Optimization" loading="lazy">
                         <div class="project-overlay">
@@ -202,7 +211,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="power-electronics">
                     <div class="project-img">
                         <img src="images/pe_cep_circuit.png" alt="SPWM Inverter Circuit Diagram" loading="lazy">
                         <div class="project-overlay">
@@ -220,7 +229,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="power-electronics">
                     <div class="project-img">
                         <img src="images/edc_cep_simulated_circuit.png" alt="12V DC Power Supply Circuit Diagram" loading="lazy">
                         <div class="project-overlay">
@@ -238,7 +247,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="mechanical">
                     <div class="project-img">
                         <img src="images/WhatsApp_Image_2026-07-15_at_11.52.25_PM_1.jpeg" alt="Cryostat System Design" loading="lazy">
                         <div class="project-overlay">
@@ -256,7 +265,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="mechanical">
                     <div class="project-img">
                         <img src="images/WhatsApp_Image_2026-07-15_at_11.48.15_PM.jpeg" alt="Windshield Wiper Mechanism — Full Sweep Position" loading="lazy">
                         <div class="project-overlay">
@@ -274,7 +283,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card glass-card project-card" data-category="mechanical">
                     <div class="project-img">
                         <img src="images/WhatsApp_Image_2026-07-15_at_11.43.44_PM.jpeg" alt="Screw Jack ANSYS FEA — Max Displacement 438µm" loading="lazy">
                         <div class="project-overlay">
@@ -296,12 +305,12 @@
         </div>
     </section>
 
-    <!-- ========== ONLINE TUITION SECTION ========== -->
+    <!-- ========== FORGESPARK ACADEMY SECTION ========== -->
     <section id="tuition" class="tuition section">
         <div class="container">
-            <h2 class="section-title">Online Tuition Services</h2>
+            <h2 class="section-title">ForgeSpark Academy</h2>
             <p class="section-subtitle" style="text-align: center; color: var(--text-muted); margin-top: -2rem; margin-bottom: 3.5rem; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-                Premium online tutoring for students of <strong>Class 9 to 12 (Matric, FSc &amp; Intermediate)</strong>. Get mentored directly by PIEAS graduates to master concepts in Physics, Chemistry, and Mathematics.
+                Premium academic mentorship and R&amp;D preparation led by <strong>PIEAS graduates</strong>. Master fundamental concepts in Physics, Chemistry, and Mathematics for Classes 9–12 (Matric, FSc &amp; Intermediate).
             </p>
             
             <div class="grid tuition-grid">
