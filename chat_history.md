@@ -2881,3 +2881,25 @@ The following modifications were made and pushed to GitHub:
 - Modified [index.html](file:///c:/Users/Saqib%20Khan/agency-website/index.html) to add the visual process timeline and a link in the navigation menu.
 - Modified [style.css](file:///c:/Users/Saqib%20Khan/agency-website/style.css) to add custom glassmorphism styles, glowing gradients, and full mobile-responsive adaptations for the process section.
 
+---
+
+### 👤 User Request (2026-07-17)
+
+> Write "Our Expert Team" on badge. Remove the extra em-dash from the hero subtitle. Add a smooth Light/Dark theme toggle.
+
+---
+
+### 🤖 Assistant Response
+
+Implemented three changes:
+
+1. **Hero badge**: Changed from `Expert Team — End-to-End Solutions` to `Our Expert Team — End-to-End Solutions`.
+2. **Hero subtitle**: Removed the em-dash (`—`) before "we deliver end-to-end" and replaced it with a comma for cleaner readability.
+3. **Light/Dark Theme Toggle**: Added a full theme toggle system:
+   - A moon/sun icon button in the navbar (index.html).
+   - JavaScript toggle logic with `localStorage` persistence (script.js).
+   - Complete light-mode CSS overrides covering navbar, hero, cards, modals, forms, portfolio filters, process section, footer, and mobile nav (style.css).
+
+All changes committed and pushed to `main`.
+
+
