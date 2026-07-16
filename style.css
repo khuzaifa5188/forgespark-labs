@@ -169,19 +169,14 @@ a {
 }
 
 .hero-content h1,
+.hero-content p,
 .hero-content .hero-badge,
 .hero-content .hero-sub,
 .hero-content .hero-buttons,
 .hero-content .hero-stats,
 .hero-content .hero-tech-stack {
-    /* ensure visible if animation fails */
     opacity: 1;
-}
-
-/* Override: hero-anim handles its own animation, but must not stay invisible */
-.hero-content .hero-anim {
-    opacity: 0;
-    animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transform: none;
 }
 
 /* Badge */
