@@ -121,6 +121,14 @@ function selectTuitionService(subject) {
     }
 }
 
+// Helper function to pre-select writing service in the contact form dropdown
+function selectWritingService(service) {
+    const projectDropdown = document.getElementById('project');
+    if (projectDropdown) {
+        projectDropdown.value = `Writing - ${service}`;
+    }
+}
+
 // Interactive Particle Canvas for Hero Background
 (function initHeroCanvas() {
     const canvas = document.getElementById('hero-canvas');
