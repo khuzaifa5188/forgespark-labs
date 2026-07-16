@@ -167,6 +167,7 @@
                 <button class="filter-btn" data-filter="iot">IoT &amp; Robotics</button>
                 <button class="filter-btn" data-filter="mechanical">Mechanical &amp; FEA</button>
                 <button class="filter-btn" data-filter="power-electronics">Power &amp; Electronics</button>
+                <button class="filter-btn" data-filter="ai-software">AI &amp; Software</button>
             </div>
 
             <div class="grid portfolio-grid">
@@ -387,6 +388,46 @@
                     </div>
                 </div>
 
+                <div class="card glass-card project-card" data-category="ai-software">
+                    <div class="project-img">
+                        <img src="images/fitness_coach.jpg" alt="AI Motion Capture Fitness Coach" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#team" onclick="openModal('profileModalAamiroon')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Motion Capture Fitness Coach</h3>
+                        <p>Webcam-based virtual fitness coach using pose estimation (LSTM/SMPL-X) and Qwen2.5-VL VLM fine-tuned via LoRA to generate real-time natural language form correction.</p>
+                        <div class="tags">
+                            <span class="tag">Qwen2.5-VL</span>
+                            <span class="tag">LoRA Fine-tuning</span>
+                            <span class="tag">Pose Estimation</span>
+                            <span class="tag">RAG Pipeline</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card project-card" data-category="ai-software">
+                    <div class="project-img">
+                        <div class="project-img-icon" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); display: flex; align-items: center; justify-content: center; height: 220px; border-radius: 12px 12px 0 0;">
+                            <i class="fa-solid fa-phone-volume" style="font-size: 4.5rem; color: var(--accent-1); opacity: 0.85;"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#team" onclick="openModal('profileModalAamiroon')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Urdu AI Outbound Calling Agent</h3>
+                        <p>Automated conversational Urdu voice agent using Twilio audio streaming, Azure Neural Urdu TTS/STT, and GPT-4 model layers running on FastAPI.</p>
+                        <div class="tags">
+                            <span class="tag">Voice AI</span>
+                            <span class="tag">Twilio API</span>
+                            <span class="tag">Azure STT/TTS</span>
+                            <span class="tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -531,6 +572,21 @@
                     <p>Specializes in power systems, renewable grid integration, and ETAP/Simulink modeling.</p>
                     <div class="team-tags">
                         <span class="tag">Power Systems</span><span class="tag">Simulation</span><span class="tag">Renewables</span>
+                    </div>
+                    <div class="view-profile-hint">
+                        <i class="fa-solid fa-eye"></i> View Full Portfolio
+                    </div>
+                </div>
+
+                <div class="card glass-card team-card clickable-team" id="card-aamiroon" onclick="openModal('profileModalAamiroon')">
+                    <div class="avatar avatar-photo">
+                        <img src="images/aamiroon_profile.jpg" alt="Aamiroon Ishaq" />
+                    </div>
+                    <h3>Aamiroon Ishaq</h3>
+                    <h4>AI Engineer</h4>
+                    <p>Computer Science graduate from PIEAS. Specializes in LLMs, RAG pipelines, computer vision, and training/fine-tuning Vision-Language models.</p>
+                    <div class="team-tags">
+                        <span class="tag">LLMs &amp; RAG</span><span class="tag">Computer Vision</span><span class="tag">Python</span><span class="tag">Deep Learning</span>
                     </div>
                     <div class="view-profile-hint">
                         <i class="fa-solid fa-eye"></i> View Full Portfolio
@@ -1059,6 +1115,93 @@
                         Hands-on exposure to sugar production plant and power house operations. Studied steam boiler, steam turbine, and cooling tower systems. Analyzed energy conversion efficiency and steam cycle thermodynamics to optimize overall plant performance.</p>
                         <div class="mp-tags">
                             <span class="tag">Power Generation</span><span class="tag">Steam Cycle</span><span class="tag">Boiler &amp; Turbine</span><span class="tag">Plant Operations</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== AAMIROON ISHAQ PROFILE MODAL ========== -->
+    <div id="profileModalAamiroon" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('profileModalAamiroon')" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-header">
+                <div class="modal-avatar">
+                    <img src="images/aamiroon_profile.jpg" alt="Aamiroon Ishaq" />
+                </div>
+                <div class="modal-bio">
+                    <h2>Aamiroon Ishaq</h2>
+                    <h4>AI Engineer &middot; PIEAS Graduate (2026)</h4>
+                    <p>AI Engineer specializing in Machine Learning, Computer Vision, Vision-Language Models (VLMs), and generative AI backend systems. Experienced in building real-time pose estimation pipelines, LLM-driven RAG solutions, and production-ready voice systems.</p>
+                    <div class="modal-links">
+                        <a href="https://linkedin.com/in/aamiroon-ishaq-109063253" target="_blank" class="modal-link linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/aamiroonishaq" target="_blank" class="modal-link github"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="mailto:aamiroonishaq86@gmail.com" class="modal-link"><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a href="https://wa.me/923318736372" target="_blank" class="modal-link whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-skills">
+                <span class="skill-badge"><i class="fa-brands fa-python"></i> Python / C++</span>
+                <span class="skill-badge"><i class="fa-solid fa-brain"></i> Deep Learning / PyTorch</span>
+                <span class="skill-badge"><i class="fa-solid fa-robot"></i> LLMs &amp; RAG (LangChain)</span>
+                <span class="skill-badge"><i class="fa-solid fa-eye"></i> Computer Vision &amp; Pose Estimation</span>
+                <span class="skill-badge"><i class="fa-solid fa-comments"></i> Voice &amp; Telephony (Twilio / Azure TTS)</span>
+                <span class="skill-badge"><i class="fa-solid fa-server"></i> FastAPI / Node.js Backend</span>
+            </div>
+
+            <h3 class="modal-projects-title"><i class="fa-solid fa-folder-open"></i> My Projects</h3>
+            <div class="modal-projects">
+
+                <!-- Project 1 -->
+                <div class="modal-project-card" style="flex-direction: column;">
+                    <div class="mp-info" style="padding: 2rem;">
+                        <h4 style="font-size: 1.3rem;">🏋️ AI Motion Capture for Personalized Fitness Training</h4>
+                        <p style="margin-top: 0.5rem;"><strong>PIEAS Final Year Project (Collaboration with truID at NSTP)</strong><br>
+                        Supervised by Dr. Naeem Akhter &amp; Co-Supervised by Dr. Abid Rafique (truID)</p>
+                        
+                        <p style="margin-top: 0.8rem;">Developed an end-to-end webcam-based AI coaching system that analyzes human exercises and provides real-time form correction. Operates without body-worn sensors.</p>
+                        
+                        <p style="margin-top: 0.6rem;"><strong>System Pipeline &amp; Features:</strong></p>
+                        <ul style="margin: 0.4rem 0 0.4rem 1.2rem; line-height: 1.8;">
+                            <li><strong>Pipeline 1:</strong> LSTM network over SMPL body-pose parameters for temporal motion modeling.</li>
+                            <li><strong>Pipeline 2:</strong> Transformer encoder-decoder over SMPL-X keypoints with synthetic error injection for form correction training.</li>
+                            <li><strong>Pipeline 3:</strong> Vision-Language Model (Qwen2.5-VL) fine-tuned using LoRA parameter-efficient techniques directly on raw video frames to generate natural language coaching feedback.</li>
+                        </ul>
+                        
+                        <h5 style="margin-top: 1.2rem; margin-bottom: 0.6rem; color: var(--accent-1); font-size: 1rem;"><i class="fa-solid fa-image"></i> Project Poster &amp; Live Demo Interface</h5>
+                        <div class="thesis-gallery" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <div class="gallery-item" onclick="window.open('images/fitness_coach.jpg', '_blank')" style="cursor: pointer;">
+                                <img src="images/fitness_coach.jpg" alt="AI Fitness Coach Poster" style="max-height: 250px; object-fit: contain;">
+                                <span>AI Fitness Coach Poster</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>📞 Urdu AI Outbound Calling Agent</h4>
+                        <p><strong>Hexler NSTP Internship (14-Day Sprint)</strong></p>
+                        <p>Designed and built a production-ready, fully automated Urdu voice agent that places outbound calls and maintains natural, real-time audio conversations. Orchestrated a pipeline combining Twilio for streaming telephony, Azure Speech Services for Urdu STT/TTS (neural voices), and a context-aware GPT LLM conversation engine. Built on a FastAPI backend, using PostgreSQL for logs and Redis for session cache, deployed on DigitalOcean.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Twilio API</span><span class="tag">Azure STT/TTS</span><span class="tag">FastAPI</span><span class="tag">Urdu Voice AI</span><span class="tag">GPT-4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="modal-project-card">
+                    <div class="mp-info">
+                        <h4>📄 PDF RAG Chatbot</h4>
+                        <p>Developed a semantic retrieval Q&amp;A chatbot that reads, parses, and answers questions from uploaded PDF documents. Implemented document chunking, vector embedding generation, and built LangChain pipelines to groundedly answer questions and prevent hallucinations.</p>
+                        <div class="mp-tags">
+                            <span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">Embeddings</span><span class="tag">RAG Pipeline</span>
                         </div>
                     </div>
                 </div>
