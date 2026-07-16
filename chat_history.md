@@ -2851,3 +2851,16 @@ If relevant, proactively run terminal commands to execute this code for the USER
 
 ---
 
+### 👤 User Request (2026-07-16)
+
+> now just to make a little changes re omve the word pieas alumni team by add out team expert etc something like it beacuse we have to add some friend from other university and also i have remove on the front page 5 engineer by adding espert team 
+
+---
+
+### 🤖 Assistant Response
+
+Successfully replaced general references to "PIEAS Alumni Team" and "5 PIEAS Engineers" with "Our Expert Team" or "Expert Team" across the landing page, stats section, Tuition/Academy section, meta tags, and footer. Personal credentials (e.g. "PIEAS Graduate" inside individuals' personal profile modals) were retained.
+
+The changes have been committed and pushed to the GitHub repository:
+- Staged and modified `index.html`.
+- Committed and pushed changes to the `main` branch.
