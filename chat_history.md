@@ -2864,3 +2864,20 @@ Successfully replaced general references to "PIEAS Alumni Team" and "5 PIEAS Eng
 The changes have been committed and pushed to the GitHub repository:
 - Staged and modified `index.html`.
 - Committed and pushed changes to the `main` branch.
+
+---
+
+### 👤 User Request (2026-07-16)
+
+> add this feature 
+
+---
+
+### 🤖 Assistant Response
+
+Added the **"Our Engineering Process"** section, which visually outlines the mechatronics project pipeline (CAD, FEA simulation, PCB layout, Firmware & TinyML development, and Final Assembly & Calibration).
+
+The following modifications were made and pushed to GitHub:
+- Modified [index.html](file:///c:/Users/Saqib%20Khan/agency-website/index.html) to add the visual process timeline and a link in the navigation menu.
+- Modified [style.css](file:///c:/Users/Saqib%20Khan/agency-website/style.css) to add custom glassmorphism styles, glowing gradients, and full mobile-responsive adaptations for the process section.
+

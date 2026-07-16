@@ -1656,3 +1656,136 @@ footer {
     font-size: 0.9rem;
     padding: 0.7rem 1.2rem;
 }
+
+/* Process Section Styles */
+.process {
+    position: relative;
+    overflow: hidden;
+}
+
+.process-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    margin-top: 4rem;
+    gap: 1.5rem;
+}
+
+/* Glowing connecting line on desktop */
+.process-line {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.process-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.step-badge {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #0f172a;
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-1);
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.1);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.process-step:hover .step-badge {
+    background: var(--gradient);
+    color: #fff;
+    border-color: transparent;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    height: calc(100% - 6rem);
+}
+
+.step-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.step-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-main);
+}
+
+.step-card p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Responsive timeline for tablets and mobile */
+@media (max-width: 1024px) {
+    .process-timeline {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .process-line {
+        top: 2rem;
+        bottom: 2rem;
+        left: 2rem;
+        width: 2px;
+        height: auto;
+    }
+
+    .process-step {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .step-badge {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .step-card {
+        height: auto;
+        align-items: flex-start;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .step-icon {
+        margin-bottom: 0.8rem;
+    }
+}
+
