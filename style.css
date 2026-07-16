@@ -84,6 +84,21 @@ a {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+.logo-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid rgba(0, 242, 254, 0.35);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+    flex-shrink: 0;
 }
 
 .nav-links {
