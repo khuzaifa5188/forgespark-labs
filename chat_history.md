@@ -2903,3 +2903,341 @@ Implemented three changes:
 All changes committed and pushed to `main`.
 
 
+
+
+---
+
+## 🚀 New Session (2026-07-17)
+
+
+### 👤 User Request (2026-07-17)
+
+> are you remember the chat
+
+
+---
+
+### 🤖 Assistant Response
+
+Yes, I remember the conversation and our history of work on the **ForgeSpark Labs** website! 
+
+Based on the [chat_history.md](file:///c:/Users/Saqib%20Khan/agency-website/chat_history.md) file and our recent updates, here is a summary of the features and changes we implemented together:
+
+1. **Saqib Jamal's Portfolio**: Created a complete profile modal and team card for Saqib, showcasing his CAD, FEA simulations, cryostat FYP details, and mechanical project images.
+2. **Portfolio Image Fixes**: Corrected the portfolio card images so the *Wiper Mechanism* card shows the SolidWorks windshield wiper assembly, and the *12V DC Power Supply* shows the simulated circuit diagram.
+3. **Rebranding**: Removed general "PIEAS" references (e.g., changed "PIEAS Alumni Team" to "Our Expert Team") to accommodate future team members from other universities, while preserving personal PIEAS graduate credentials inside the individual modals.
+4. **Engineering Process Section**: Added a visual mechatronics timeline/process section (CAD, FEA, PCB, Firmware, Calibration).
+5. **Theme Toggle & Hero Polish**: Added a smooth Light/Dark theme toggle with local storage persistence, polished the Hero badge text, and cleaned up the subtitle punctuation.
+
+Let me know what you would like to work on or update next!
+
+
+---
+
+### 👤 User Request (2026-07-17)
+
+> https://github.com/khuzaifa5188/forgespark-labs
+> Monitor the Google Search traffic to https://khuzaifa5188.github.io/forgespark-labs/
+> To: Owner of https://khuzaifa5188.github.io/forgespark-labs/,
+> 
+> Google systems confirm that on July 15, 2026 we started collecting Google Search impressions for your website in Search Console. This means that pages from your website are now appearing in Google search results for some queries. Here’s how you can monitor your site’s Search performance using Search Console.
+> 
+> Track your website’s performance:
+> 1
+> Check your top pages on Google Search
+> 
+> Check your top pages in the Performance Report to monitor how many impressions they get.
+> 
+> See top pages
+> 2
+> See which queries trigger your site
+> 
+> See which queries show your website’s pages in Google search results.
+> 
+> See top queries
+> 3
+> Monitor errors on your pages
+> 
+> Pages with errors may not appear in search results or provide a bad experience to your users. Make sure to check the crawl errors report and fix any issues you find.
+> 
+> See errors
+> Check out help resources.
+> Visit our Help Center to learn how to make the most of the Search Analytics report.
+> Ask questions in our forum for more help - mention message type [WNC-756200].
+> i want to add proper logo to the website whneveer i serch a complete and good propfile seem to me
+
+
+---
+
+### 🤖 Assistant Response
+
+The background task git push origin main completed.
+Here is the log:
+To https://github.com/khuzaifa5188/forgespark-labs.git
+   91e3f0b..5bed936  main -> main
+
+***
+
+I have implemented and pushed the updates to improve the website's brand profile and ensure a proper logo and site name display in Google Search results.
+
+Here is a summary of what has been configured and pushed to your GitHub repository:
+
+### 1. 🖼️ Multi-Resolution Favicon Generation
+Google Search has strict guidelines to display favicons in search results (including requiring dimensions that are multiples of `48px`). I resized your original logo (`favicon.png`) into a set of standard dimensions for search compliance:
+*   `favicon.ico` — Multi-resolution icon (contains `16x16`, `32x32`, `48x48`).
+*   `favicon-48x48.png` — Resized specifically to **Google Search's recommended icon size**.
+*   `favicon-96x96.png` — High-DPI display size (also mapped as the navbar logo to optimize page load speeds, replacing the heavy 1MB original file).
+*   `favicon-180x180.png` — Apple Touch icon size.
+
+### 2. 🏷️ Google Site Name & Logo Structured Data (JSON-LD)
+I added Google-recommended Schema.org JSON-LD structured data into the `<head>` of [index.html](file:///c:/Users/Saqib%20Khan/agency-website/index.html). This explicitly tells Google Search:
+*   Your site name is **ForgeSpark Labs** (instead of defaulting to "GitHub Pages documentation").
+*   Your official brand logo is the newly optimized `favicon-96x96.png` image.
+
+### 3. 🌐 Social Media & Open Graph Meta Tags
+Added Open Graph and Twitter Card tags to ensure that when your link is shared on platforms (WhatsApp, LinkedIn, Twitter, Facebook, etc.), a card with the **ForgeSpark Labs** logo, title, and description shows up.
+
+### 4. 🤖 Search Indexing (Robots & Sitemap)
+*   **[sitemap.xml](file:///c:/Users/Saqib%20Khan/agency-website/sitemap.xml)**: Created a sitemap declaring your website URL to help Google index it.
+*   **[robots.txt](file:///c:/Users/Saqib%20Khan/agency-website/robots.txt)**: Created a robot controller file to let search crawlers read all pages on your site and point them directly to your sitemap.
+
+***
+
+### ⏳ Next Steps for Google Search Results:
+Google's indexing systems are automated and recrawl sites periodically. Because they've started collecting impressions on your site, you can speed up the update by:
+1.  Going to your **Google Search Console** dashboard.
+2.  Entering your URL (`https://khuzaifa5188.github.io/forgespark-labs/`) in the **URL Inspection** bar at the top.
+3.  Clicking **"Request Indexing"** to ask Googlebot to prioritize recrawling your homepage and reading these new tags.
+
+
+---
+
+### 🤖 Assistant Response
+
+The final push has completed successfully, and your SEO files (`robots.txt` and `sitemap.xml`) are now live on the server alongside the updated logo configurations. 
+
+You're fully set up for Google Search Console to index your correct site name and logo now. Please let me know if you would like to make any other changes to the site!
+
+
+---
+
+### 👤 User Request (2026-07-17)
+
+> now what i do step by step guide me
+
+
+---
+
+### 🤖 Assistant Response
+
+Here is a step-by-step guide on what you should do next to make sure Google indexes your new logo, site name, and pages correctly:
+
+### Step 1: Verify the changes on your live site (Hard Refresh)
+First, verify that the website has updated on your end:
+1. Open your browser and go to your live website: [https://khuzaifa5188.github.io/forgespark-labs/](https://khuzaifa5188.github.io/forgespark-labs/)
+2. Perform a **Hard Refresh** to clear your browser cache:
+   * **Windows (Chrome/Edge/Firefox):** Press `Ctrl` + `F5` (or `Ctrl` + `Shift` + `R`).
+   * **Mac (Safari/Chrome):** Press `Cmd` + `Shift` + `R`.
+3. Check the tab bar at the top of your browser—you should see the favicon (logo) next to your page title, and the website's logo in the navigation bar should look sharp and load instantly.
+
+---
+
+### Step 2: Submit your Sitemap in Google Search Console
+A sitemap helps Google find and crawl your pages faster:
+1. Log in to your [Google Search Console](https://search.google.com/search-console).
+2. Select your property: `https://khuzaifa5188.github.io/forgespark-labs/` (if it's not selected already).
+3. On the left-hand menu, click on **Sitemaps** (under the "Indexing" section).
+4. Under **"Add a new sitemap"**, type in: `sitemap.xml`
+5. Click **Submit**. Google will queue it for crawling, and you should see a green "Success" status shortly.
+
+---
+
+### Step 3: Request Indexing for the Homepage
+To force Google's bots to immediately re-evaluate your page's logo, title, and metadata:
+1. Inside Google Search Console, look at the search bar at the very top (labeled **"Inspect any URL in..."**).
+2. Paste your homepage URL: `https://khuzaifa5188.github.io/forgespark-labs/` and press **Enter**.
+3. Google will fetch the current index status of the page. Once loaded, click on the **"Request Indexing"** button on that page.
+4. This adds your page to a high-priority crawling queue. Googlebot will recrawl the page (usually within 24 to 48 hours) to detect the new logo and site name.
+
+---
+
+### Step 4: Test your Schema Markup (Optional but recommended)
+To verify that Google's crawler reads your logo and site name structure perfectly:
+1. Go to Google's official [Rich Results Test Tool](https://search.google.com/test/rich-results).
+2. Enter your live website URL: `https://khuzaifa5188.github.io/forgespark-labs/`
+3. Click **Test URL**.
+4. The tool will analyze your page and show you if the `WebSite` and `Organization` structured data (which tells Google your site name is "ForgeSpark Labs" and defines your logo) are valid and free of errors.
+
+
+---
+
+### 👤 User Request (2026-07-17)
+
+> [Uploaded Screenshot / Blank Request]
+
+
+---
+
+### 🤖 Assistant Response
+
+Don't worry! Seeing **"Couldn't fetch"** is actually a very common behavior in Google Search Console when you submit a brand-new sitemap. 
+
+Here is exactly why this happens and what you should do:
+
+### 1. Why did it happen?
+* **GitHub Pages Build Time**: When we pushed the sitemap, GitHub Pages took 1 to 2 minutes to compile and deploy the file. If you submitted it immediately, Googlebot attempted to fetch it before the file was actually live, resulting in a temporary fetch failure.
+* **Search Console UI Quirk**: In Google Search Console, "Couldn't fetch" is the default placeholder status for any newly submitted sitemap that hasn't been crawled yet. 
+
+---
+
+### 2. How to fix it (Step-by-Step)
+
+Now that the file is 100% live and public on your site, try the following:
+
+#### Option A: Re-submit the sitemap (Fastest)
+1. In the input field under **"Add a new sitemap"**, type in `sitemap.xml` again.
+2. Click **Submit**.
+3. Refresh the page after 10–15 seconds. Often, it will immediately change to a green **Success** status with **1 Discovered Page**.
+
+#### Option B: Perform a Live Test to force Googlebot to check it
+If it still says "Couldn't fetch," you can test what Googlebot sees:
+1. Paste the full sitemap URL into the search bar at the very top of your Search Console:
+   `https://khuzaifa5188.github.io/forgespark-labs/sitemap.xml`
+2. Press **Enter**.
+3. On the result page, click **"Test Live URL"** in the top right.
+4. If it returns a green checkmark, Googlebot can access it perfectly, and the sitemap status will update to **Success** automatically within 24 hours.
+
+
+---
+
+### 👤 User Request (2026-07-17)
+
+> https://khuzaifa5188.github.io/forgespark-labs/sitemap.xml
+> this page is not on google it is his reponse are sitemap exta?
+
+
+---
+
+### 🤖 Assistant Response
+
+Yes! That response is completely normal and expected.
+
+### 1. Why does it say "URL is not on Google"?
+Because **`sitemap.xml` is not a regular web page**. It is a background file made specifically for search engines (XML format), not for human visitors. 
+
+Google deliberately **does not index sitemaps** to show them in public search results. Therefore, Search Console will always report that `sitemap.xml` is "not on Google."
+
+---
+
+### 2. Is the sitemap "extra"?
+Yes! Think of the sitemap as an **extra helper map** that you hand to Google's bots. 
+* Google uses the map to find your **homepage** (`https://khuzaifa5188.github.io/forgespark-labs/`).
+* The homepage is what *should* be indexed and show up on Google search, not the sitemap itself.
+
+---
+
+### 3. How to check if it's working
+As long as the **Live Test** shows that Google **can crawl/fetch** the file without errors, the sitemap is working perfectly. 
+
+Google will read the link inside your sitemap and index your actual website homepage.
+
+
+---
+
+### 👤 User Request (2026-07-17)
+
+> [Uploaded Screenshot / Blank Request]
+
+
+---
+
+### 🤖 Assistant Response
+
+Excellent! This is the correct page to inspect.
+
+Since the URL status is green and indexed, you just need to do one final thing on this screen to submit our new changes:
+
+1. Click the **"REQUEST INDEXING"** button (located on the right side of the box, next to "Page changed?").
+2. Google will perform a quick live test and add your homepage to its priority queue.
+
+Once Google recrawls it (usually in a day or two), it will read our new structured data and update your search listing with the new logo and site name (**ForgeSpark Labs**)! You're all set!
+
+
+---
+
+### 👤 User Request (2026-07-17)
+
+> okay now when i serch that on google the company come but it from github i want that not github come just company detial
+
+
+---
+
+### 🤖 Assistant Response
+
+There are two things that determine how your company appears on Google: the **Site Name (what Google calls the page)** and the **URL (the web address)**.
+
+Here is how we fix both to show just your company details:
+
+---
+
+### 1. Fixing the Site Name ("GitHub Pages documentation" ➔ "ForgeSpark Labs")
+The reason Google showed "GitHub Pages documentation" above the link is because it hadn't read our new code yet. 
+
+We just added the official **WebSite JSON-LD Schema code** and meta tags to the website. This code specifically tells Google: *"The name of this website is **ForgeSpark Labs**."*
+
+* **What you need to do**: Since you just clicked **"Request Indexing"**, Google's bots are currently scheduled to recrawl your site.
+* **Result**: Once Google recrawls it (usually within 1–2 days), the text above the link will update to show **ForgeSpark Labs** instead of "GitHub Pages documentation."
+
+---
+
+### 2. Fixing the Web Address (Removing `github.io` from the URL)
+Right now, your link is: `https://khuzaifa5188.github.io/forgespark-labs/`
+
+If you want a 100% clean profile on Google Search where **no GitHub link is visible at all** (e.g., showing `https://forgesparklabs.com` instead), you need to connect a **Custom Domain**. 
+
+GitHub Pages allows you to connect a custom domain for free. Here is how you can do it:
+
+1. **Buy a Domain**: Purchase a domain of your choice (like `forgesparklabs.com` or `forgespark.me`) from a registrar (like GoDaddy, Namecheap, or Google Domains/Squarespace).
+2. **Add a CNAME in GitHub**: We can create a simple file named `CNAME` in your repository containing your domain name.
+3. **Configure DNS**: Point your domain's DNS settings (specifically A records or CNAME records) to GitHub's servers (we can give you the exact IP addresses for this).
+
+Once connected, Google will index your website under your custom domain (e.g., `forgesparklabs.com`), and all references to GitHub will disappear from the search results!
+
+
+---
+
+### 👤 User Request (2026-07-17)
+
+> all these will be free?
+
+
+---
+
+### 🤖 Assistant Response
+
+Here is the breakdown of what is free and what has a small cost:
+
+### 1. What is 100% FREE:
+* **GitHub Pages Hosting**: Hosting your website code, images, and portfolios on GitHub is completely free forever.
+* **SSL Certificate (Security)**: GitHub automatically generates a secure HTTPS padlock for your custom domain for free.
+* **Custom Domain Setup**: GitHub does not charge any fees for connecting a custom domain to your website.
+* **Google Search Console**: Registering and tracking your site traffic on Google is 100% free.
+
+---
+
+### 2. What has a small cost:
+* **The Domain Name itself (e.g., `forgesparklabs.com`)**: 
+  You have to buy the name from a domain seller (like GoDaddy, Namecheap, or Porkbun). 
+  * **Cost**: Typically around **$8 to $12 per year** (which is about $1 a month). There are no monthly hosting charges; you only pay that small amount once a year to keep ownership of the name.
+
+If you decide to purchase a domain name, let me know its name, and I will write the config files (`CNAME` file) and guide you through pointing the domain settings to GitHub!
+
+
+---
+
+### 👤 User Request (2026-07-17)
+
+> save the cht
+
+
+---
