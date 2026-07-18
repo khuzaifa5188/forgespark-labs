@@ -70,11 +70,9 @@
         </a>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#process">Process</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#simple-services">Services Hub</a></li>
+            <li><a href="#complex-services">Engineering Labs</a></li>
             <li><a href="#tuition">Academy</a></li>
-            <li><a href="#writing">Writing</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#contact" class="btn-primary">Hire Us</a></li>
         </ul>
@@ -186,30 +184,88 @@
 
 
 
-    <section id="services" class="services section">
+    <!-- ========== SIMPLE SERVICES SECTION ========== -->
+    <section id="simple-services" class="services section" style="background: radial-gradient(circle at 10% 20%, rgba(37, 211, 102, 0.03) 0%, transparent 50%); border-bottom: 1px solid rgba(255, 255, 255, 0.03);">
         <div class="container">
-            <h2 class="section-title">Our Expertise</h2>
+            <h2 class="section-title">Community &amp; Student Hub</h2>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-muted); margin-top: -2rem; margin-bottom: 4rem; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                Direct and accessible services designed for school/college students and local communities. **Tap any card to message us directly on WhatsApp.**
+            </p>
+            <div class="grid simple-services-grid">
+                
+                <!-- Online Apply -->
+                <div class="card glass-card simple-service-card">
+                    <div class="simple-service-icon" style="color: #25D366; font-size: 2.5rem; margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3>Online Apply &amp; Admissions</h3>
+                    <p>Hassle-free online submissions for government job portals, university admissions, public service applications, and online testing registries.</p>
+                    <a href="https://wa.me/923189523824?text=Hello%20ForgeSpark%20Labs!%20I%20need%20help%20with%20an%20online%20application%20or%20university%20admission." target="_blank" class="whatsapp-quick-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Apply via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Academic Writing -->
+                <div class="card glass-card simple-service-card">
+                    <div class="simple-service-icon" style="color: #6366f1; font-size: 2.5rem; margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <h3>CV, Assignment &amp; Thesis Writing</h3>
+                    <p>Professional formatting, structural polishing, plagiarism checking, and LaTeX conversion for university assignments, CVs, and final thesis reports.</p>
+                    <a href="https://wa.me/923189523824?text=Hello%20ForgeSpark%20Labs!%20I%20want%20to%20inquire%20about%20CV,%20assignment,%20or%20thesis%20writing%20services." target="_blank" class="whatsapp-quick-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Order Document
+                    </a>
+                </div>
+
+                <!-- Tuition -->
+                <div class="card glass-card simple-service-card">
+                    <div class="simple-service-icon" style="color: #00f2fe; font-size: 2.5rem; margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3>School &amp; FSc Online Tuition</h3>
+                    <p>Targeted conceptual learning and examination preparation in Physics, Chemistry, and Mathematics for Matric and Intermediate (FSc) students.</p>
+                    <a href="https://wa.me/923189523824?text=Hello%20ForgeSpark%20Labs!%20I%20would%20like%20to%20enroll%20in%20online%20tuition%20for%20Matric/FSc." target="_blank" class="whatsapp-quick-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Enroll / Inquire
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPLEX ENGINEERING SECTION ========== -->
+    <section id="complex-services" class="services section" style="background: radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.03) 0%, transparent 50%); border-bottom: 1px solid rgba(255, 255, 255, 0.03);">
+        <div class="container">
+            <h2 class="section-title">Engineering &amp; R&amp;D Labs</h2>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-muted); margin-top: -2rem; margin-bottom: 4rem; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                Advanced technical consultation, design, and simulation across hardware and software systems. Built by qualified engineers for professionals.
+            </p>
             <div class="grid">
+                
                 <div class="card glass-card">
                     <i class="fa-solid fa-microchip card-icon"></i>
-                    <h3>Electronics &amp; IoT</h3>
-                    <p>Custom PCB design, microcontroller programming (ESP32, STM32), and smart sensor integration.</p>
+                    <h3>Electronics &amp; Embedded Systems</h3>
+                    <p>Custom multilayer PCB layouts, electrical schematic design, and firmware programming (ESP32, STM32, Arduino) for real-time sensor loops.</p>
                 </div>
-                <div class="card glass-card">
-                    <i class="fa-solid fa-robot card-icon"></i>
-                    <h3>AI &amp; Machine Learning</h3>
-                    <p>Edge AI, computer vision, and predictive models deployed directly on MCUs for real-time processing.</p>
-                </div>
+
                 <div class="card glass-card">
                     <i class="fa-solid fa-gears card-icon"></i>
-                    <h3>Mechanical &amp; Prototyping</h3>
-                    <p>3D CAD modeling, structural analysis, and physical manufacturing using lathe, milling, and 3D printing.</p>
+                    <h3>Mechanical &amp; FEA Simulations</h3>
+                    <p>Parametric 3D CAD design, multi-body kinematics, structural stress distribution analysis, and thermal/CFD fluid validation (ANSYS &amp; COMSOL).</p>
                 </div>
+
                 <div class="card glass-card">
-                    <i class="fa-solid fa-rocket card-icon"></i>
-                    <h3>End-to-End Product</h3>
-                    <p>We take your idea and deliver a fully functional hardware product with mechanics, electronics, and software combined.</p>
+                    <i class="fa-solid fa-robot card-icon"></i>
+                    <h3>AI &amp; Software Architecture</h3>
+                    <p>Voice agents, outbound conversational models, Large Language Model (LLM) RAG pipelines, computer vision, and high-performance API endpoints.</p>
                 </div>
+
+                <div class="card glass-card">
+                    <i class="fa-solid fa-circle-nodes card-icon"></i>
+                    <h3>Civil Infrastructure &amp; Hydraulics</h3>
+                    <p>Steady/unsteady river flood inundation mapping (HEC-RAS/RAS Mapper) and complex geotechnical bored pile vs. raft foundation settlement designs.</p>
+                </div>
+
             </div>
         </div>
     </section>

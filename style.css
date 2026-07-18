@@ -516,6 +516,59 @@ a {
     font-size: 0.95rem;
 }
 
+/* Simple Service Card & WhatsApp Quick Button Styles */
+.simple-service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.simple-service-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.whatsapp-quick-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: rgba(37, 211, 102, 0.12);
+    border: 1px solid rgba(37, 211, 102, 0.3);
+    color: #25D366;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.08);
+}
+
+.whatsapp-quick-btn:hover {
+    background: #25D366;
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+/* Light mode overrides for WhatsApp buttons */
+body.light-mode .whatsapp-quick-btn {
+    background: rgba(37, 211, 102, 0.08);
+    border-color: rgba(37, 211, 102, 0.2);
+}
+
+body.light-mode .whatsapp-quick-btn:hover {
+    background: #25D366;
+    color: #fff;
+}
+
 /* Portfolio */
 .portfolio-filters {
     display: flex;
