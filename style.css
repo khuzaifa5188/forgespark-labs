@@ -516,6 +516,119 @@ a {
     font-size: 0.95rem;
 }
 
+/* ── Section Tier Dividers ───────────────────────────────────── */
+.section-tier-divider {
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.simple-tier {
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.06) 0%, rgba(0, 242, 254, 0.04) 100%);
+    border-top: 2px solid rgba(37, 211, 102, 0.25);
+    border-bottom: 2px solid rgba(37, 211, 102, 0.12);
+}
+
+.engineering-tier {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.06) 0%, rgba(139, 92, 246, 0.04) 100%);
+    border-top: 2px solid rgba(99, 102, 241, 0.3);
+    border-bottom: 2px solid rgba(99, 102, 241, 0.12);
+}
+
+.tier-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.5rem 1.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.simple-tier .tier-badge {
+    background: rgba(37, 211, 102, 0.12);
+    border: 1.5px solid rgba(37, 211, 102, 0.4);
+    color: #25D366;
+}
+
+.engineering-tier .tier-badge {
+    background: rgba(99, 102, 241, 0.12);
+    border: 1.5px solid rgba(99, 102, 241, 0.4);
+    color: #818cf8;
+}
+
+.tier-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Section-level theming */
+.simple-services-section {
+    background: radial-gradient(ellipse at 10% 60%, rgba(37, 211, 102, 0.05) 0%, transparent 60%);
+}
+
+.engineering-labs-section {
+    background: radial-gradient(ellipse at 90% 40%, rgba(99, 102, 241, 0.05) 0%, transparent 60%);
+}
+
+/* ── CV Sample Chips ─────────────────────────────────────────── */
+.cv-samples-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.65rem;
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.cv-samples-row {
+    display: flex;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+}
+
+.cv-sample-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    color: #a5b4fc;
+    padding: 0.38rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.cv-sample-chip:hover {
+    background: rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.5);
+    color: #c7d2fe;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(99, 102, 241, 0.25);
+}
+
+body.light-mode .cv-sample-chip {
+    background: rgba(99, 102, 241, 0.07);
+    border-color: rgba(99, 102, 241, 0.2);
+    color: #4f46e5;
+}
+
+body.light-mode .cv-sample-chip:hover {
+    background: rgba(99, 102, 241, 0.15);
+    color: #3730a3;
+}
+
 /* Simple Service Card & WhatsApp Quick Button Styles */
 .simple-service-card {
     display: flex;
