@@ -731,8 +731,32 @@ body.light-mode .cv-sample-chip:hover {
     color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.5;
-    flex-grow: 1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* R&D Section Tagline */
+.rnd-tagline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #f59e0b;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.rnd-tagline i {
+    font-size: 1rem;
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { opacity: 1; text-shadow: 0 0 8px rgba(245, 158, 11, 0.5); }
+    50% { opacity: 0.7; text-shadow: 0 0 16px rgba(245, 158, 11, 0.9); }
 }
 
 .whatsapp-quick-btn {
