@@ -286,6 +286,7 @@
                 <button class="filter-btn" data-filter="mechanical">Mechanical &amp; FEA</button>
                 <button class="filter-btn" data-filter="power-electronics">Power &amp; Electronics</button>
                 <button class="filter-btn" data-filter="ai-software">AI &amp; Software</button>
+                <button class="filter-btn" data-filter="civil">Civil &amp; Hydraulics</button>
             </div>
 
             <div class="grid portfolio-grid">
@@ -546,6 +547,69 @@
                     </div>
                 </div>
 
+                <!-- Project: Rainwater Harvesting -->
+                <div class="card glass-card project-card" data-category="civil">
+                    <div class="project-img">
+                        <div class="project-img-icon" style="background: linear-gradient(135deg, #11998e, #38ef7d); display: flex; align-items: center; justify-content: center; height: 220px; border-radius: 12px 12px 0 0;">
+                            <i class="fa-solid fa-cloud-showers-water" style="font-size: 4.5rem; color: #fff; opacity: 0.9;"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#team" onclick="openModal('profileModalZabiullah')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Rainwater Harvesting System Design <span style="font-size:0.7rem;background:linear-gradient(135deg,#00f2fe,#6366f1);color:#fff;padding:0.2rem 0.6rem;border-radius:20px;font-weight:700;vertical-align:middle;margin-left:0.4rem;">FYP</span></h3>
+                        <p>Designed a plot-scale rainwater harvesting model for domestic non-potable use in Regi Model Town, Peshawar. Sized gutters, first-flush diverters, sand-gravel-charcoal filters, and recharge wells.</p>
+                        <div class="tags">
+                            <span class="tag">Hydrology</span>
+                            <span class="tag">Rainwater Harvesting</span>
+                            <span class="tag">Groundwater Recharge</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: HEC-RAS Swat River -->
+                <div class="card glass-card project-card" data-category="civil">
+                    <div class="project-img">
+                        <div class="project-img-icon" style="background: linear-gradient(135deg, #00c6ff, #0072ff); display: flex; align-items: center; justify-content: center; height: 220px; border-radius: 12px 12px 0 0;">
+                            <i class="fa-solid fa-house-chimney-water" style="font-size: 4.5rem; color: #fff; opacity: 0.9;"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#team" onclick="openModal('profileModalZabiullah')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Flood-Risk Mapping of Swat River</h3>
+                        <p>Conducted a 100-year flood hydraulic simulation using HEC-RAS 7.0.1 and RAS Mapper for a 67.35 km reach of the Swat River. Mapped water-surface elevations and flood-risk inundation extents.</p>
+                        <div class="tags">
+                            <span class="tag">HEC-RAS</span>
+                            <span class="tag">RAS Mapper</span>
+                            <span class="tag">Flood Mapping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Raft vs Pile Foundation -->
+                <div class="card glass-card project-card" data-category="civil">
+                    <div class="project-img">
+                        <div class="project-img-icon" style="background: linear-gradient(135deg, #e65c00, #F9D423); display: flex; align-items: center; justify-content: center; height: 220px; border-radius: 12px 12px 0 0;">
+                            <i class="fa-solid fa-trowel-bricks" style="font-size: 4.5rem; color: #fff; opacity: 0.9;"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#team" onclick="openModal('profileModalZabiullah')" class="overlay-btn"><i class="fa-solid fa-user"></i> View Full Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Raft vs. Bored Pile Foundation CEP</h3>
+                        <p>Geotechnical foundation analysis comparing a 5m deep raft vs. a group of 120 cast in-situ bored piles (1.0m diameter) to bypass compressible organic clay and mitigate settlement from 436mm to 33mm.</p>
+                        <div class="tags">
+                            <span class="tag">Foundation Design</span>
+                            <span class="tag">Geotechnical</span>
+                            <span class="tag">Settlement Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -705,6 +769,21 @@
                     <p>Computer Science graduate from PIEAS. Specializes in LLMs, RAG pipelines, computer vision, and Vision-Language model fine-tuning (LoRA/QLoRA).</p>
                     <div class="team-tags">
                         <span class="tag">LLMs &amp; RAG</span><span class="tag">Computer Vision</span><span class="tag">Python</span><span class="tag">Deep Learning</span>
+                    </div>
+                    <div class="view-profile-hint">
+                        <i class="fa-solid fa-eye"></i> View Full Portfolio
+                    </div>
+                </div>
+
+                <div class="card glass-card team-card clickable-team" id="card-zabiullah" onclick="openModal('profileModalZabiullah')">
+                    <div class="avatar avatar-photo">
+                        <img src="images/zabiullah_profile.jpg" alt="Zabiullah Khan" />
+                    </div>
+                    <h3>Zabiullah Khan</h3>
+                    <h4>Civil Engineer</h4>
+                    <p>Civil Engineering graduate from UET Peshawar. Specialist in structural foundation design, hydrologic modeling (HEC-RAS), and environmental rainwater harvesting.</p>
+                    <div class="team-tags">
+                        <span class="tag">HEC-RAS</span><span class="tag">Geotechnical</span><span class="tag">Hydrology</span><span class="tag">Foundation Design</span>
                     </div>
                     <div class="view-profile-hint">
                         <i class="fa-solid fa-eye"></i> View Full Portfolio
@@ -1312,6 +1391,97 @@
                         <div class="mp-tags">
                             <span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">Embeddings</span><span class="tag">RAG Pipeline</span>
                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== ZABIULLAH KHAN PROFILE MODAL ========== -->
+    <div id="profileModalZabiullah" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('profileModalZabiullah')" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-header">
+                <div class="modal-avatar">
+                    <img src="images/zabiullah_profile.jpg" alt="Zabiullah Khan" />
+                </div>
+                <div class="modal-bio">
+                    <h2>Zabiullah Khan</h2>
+                    <h4>Civil Engineer &middot; UET Peshawar Graduate</h4>
+                    <p>Civil Engineer specializing in <strong>hydrologic/hydraulic modeling</strong>, <strong>flood-risk mapping</strong>, <strong>structural foundation design</strong>, and <strong>sustainable environmental water management systems</strong>. Experienced in design storm IDF derivation, HEC-RAS channel routing, and bored pile settlement calculations. Proficient in AutoCAD, HEC-RAS, and geo-hydraulic mapping.</p>
+                    <!-- Contact links removed for company privacy -->
+                </div>
+            </div>
+
+            <div class="modal-skills">
+                <span class="skill-badge"><i class="fa-solid fa-water"></i> HEC-RAS / HEC-HMS</span>
+                <span class="skill-badge"><i class="fa-solid fa-map-location-dot"></i> RAS Mapper / GIS Mapping</span>
+                <span class="skill-badge"><i class="fa-solid fa-trowel-bricks"></i> Foundation &amp; Retaining Wall Design</span>
+                <span class="skill-badge"><i class="fa-solid fa-layer-group"></i> Geotechnical Settlement Analysis</span>
+                <span class="skill-badge"><i class="fa-solid fa-faucet-drip"></i> Rainwater Harvesting &amp; Pipe Sizing</span>
+                <span class="skill-badge"><i class="fa-solid fa-compass-drafting"></i> AutoCAD / Civil 3D</span>
+            </div>
+
+            <h3 class="modal-projects-title"><i class="fa-solid fa-folder-open"></i> My Projects</h3>
+            <div class="modal-projects">
+
+                <!-- Project 1 -->
+                <div class="modal-project-card" style="flex-direction: column;">
+                    <div class="mp-info" style="padding: 2rem;">
+                        <h4 style="font-size: 1.3rem;">🌧️ Rainwater Harvesting Design for Regi Model Town</h4>
+                        <p style="margin-top: 0.5rem;"><strong>Graduation Design Project &mdash; UET Peshawar</strong><br>
+                        Collaborated with Hamid Ullah, Sumair Ali &amp; Muhammad Fazeel</p>
+                        
+                        <p style="margin-top: 0.8rem;">Designed a domestic rainwater harvesting system for 5 Marla, 10 Marla, and 1 Kanal residential plots in Zones 3 and 4 of Regi Model Town, Peshawar, to reduce urban water stress and municipal demand.</p>
+                        
+                        <p style="margin-top: 0.6rem;"><strong>System Design Specifications:</strong></p>
+                        <ul style="margin: 0.4rem 0 0.4rem 1.2rem; line-height: 1.8;">
+                            <li><strong>Hydrologic Basis:</strong> Built GCM model using 23 years of annual rainfall data (2002–2024; mean: 471mm) to estimate plot-wise harvesting yields.</li>
+                            <li><strong>Drainage Sizing:</strong> Sized gutters and uPVC/HDPE downpipes using a 10-year, 15-minute storm (intensity: 141.6 mm/hr) and 0.85 runoff coefficient.</li>
+                            <li><strong>First-Flush &amp; Filtration:</strong> Sized first-flush diverters (95L to 314L) to isolate initial roof debris, routing water through a multi-layer filter (gravel, sand, charcoal).</li>
+                            <li><strong>Storage &amp; Recharge:</strong> Sized RCC underground storage tanks (5 m³ to 20 m³) and designed silt-trap overflow chambers leading to groundwater recharge wells.</li>
+                        </ul>
+                        <a href="images/Zabiullah_Rainwater_Harvesting_Presentation.pptx" target="_blank" class="mp-link" style="margin-top: 1.2rem;"><i class="fa-solid fa-file-powerpoint"></i> View Project Presentation (PPTX)</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="modal-project-card" style="flex-direction: column;">
+                    <div class="mp-info" style="padding: 2rem;">
+                        <h4 style="font-size: 1.3rem;">🌊 Flood-Risk Mapping of Swat River</h4>
+                        <p style="margin-top: 0.5rem;"><strong>Water Resources &amp; Environmental Engineering Lab Term Project &mdash; UET Peshawar</strong><br>
+                        Supervised by Dr. Ateeq-Ur-Rauf</p>
+                        
+                        <p style="margin-top: 0.8rem;">Conducted a complete 100-year flood-risk mapping exercise for a 67.35 km reach of the Swat River, extending from Khwazakhela Gauging Station to Amandara Headworks using HEC-RAS 7.0.1 and RAS Mapper.</p>
+                        
+                        <p style="margin-top: 0.6rem;"><strong>Hydraulic Model Specifications:</strong></p>
+                        <ul style="margin: 0.4rem 0 0.4rem 1.2rem; line-height: 1.8;">
+                            <li><strong>Hydrologic Analysis:</strong> Conducted Log-Pearson Type III distribution fitting on annual peaks (2005–2024) to adopt a Q100 design discharge of 10,636.67 m³/s.</li>
+                            <li><strong>Geometry &amp; Boundary:</strong> Represented reach with 34 terrain-derived cross sections with a downstream normal-depth slope boundary of 0.006414.</li>
+                            <li><strong>Results:</strong> Computed water-surface elevations ranging from 673.82m to 1,106.64m, hydraulic depths up to 8.71m, and mapped a total flood inundation boundary of 86.90 km².</li>
+                        </ul>
+                        <a href="images/Zabiullah_Swat_Flood_Mapping.pdf" target="_blank" class="mp-link" style="margin-top: 1.2rem;"><i class="fa-solid fa-file-pdf"></i> View Swat Flood-Risk Mapping Report (PDF)</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="modal-project-card" style="flex-direction: column;">
+                    <div class="mp-info" style="padding: 2rem;">
+                        <h4 style="font-size: 1.3rem;">🏢 Geotechnical CEP: Raft vs. Drilled Bored Pile Foundation</h4>
+                        <p style="margin-top: 0.5rem;"><strong>Foundation Engineering Course Complex Project &mdash; UET Peshawar</strong><br>
+                        Supervised by Sir Dr. Shahid Ullah</p>
+                        
+                        <p style="margin-top: 0.8rem;">Evaluated foundation suitability for a proposed 12-storey commercial building on Warsak Road, Peshawar, under a gross pressure of 180 kPa.</p>
+                        
+                        <p style="margin-top: 0.6rem;"><strong>Analysis &amp; Calculations:</strong></p>
+                        <ul style="margin: 0.4rem 0 0.4rem 1.2rem; line-height: 1.8;">
+                            <li><strong>Raft Foundation:</strong> Sized a 30m x 66m raft at 5m depth. Short-term undrained shear FOS was safe (5.34), but the raft failed serviceability due to massive consolidation settlement (436mm vs. 50mm allowable) caused by a soft organic clay layer.</li>
+                            <li><strong>Pile Foundation Design:</strong> Designed a group of 120 bored piles (1.0m diameter, 25m depth) arranged in a 10x12 grid. Piles successfully bypass compressible soils to terminate in dense gravel.</li>
+                            <li><strong>Results:</strong> Total settlement was reduced to only 33mm (including 3mm elastic pile compression), satisfying safety and serviceability criteria.</li>
+                        </ul>
+                        <a href="images/Zabiullah_Foundation_CEP.pdf" target="_blank" class="mp-link" style="margin-top: 1.2rem;"><i class="fa-solid fa-file-pdf"></i> View Foundation CEP Report (PDF)</a>
                     </div>
                 </div>
 
