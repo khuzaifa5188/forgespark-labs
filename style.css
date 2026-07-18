@@ -2387,3 +2387,102 @@ body.light-mode .hamburger {
     }
 }
 
+/* Featured Online Apply Card */
+.online-apply-featured-card {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    border-color: rgba(37, 211, 102, 0.2);
+    background: radial-gradient(circle at 10% 10%, rgba(37, 211, 102, 0.05) 0%, transparent 60%);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.online-apply-featured-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(37, 211, 102, 0.4);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.1);
+}
+
+.apply-icon-box {
+    font-size: 4.5rem;
+    color: #25D366;
+    flex-shrink: 0;
+    animation: float-slow 3s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.apply-content-box {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.apply-badge {
+    background: rgba(37, 211, 102, 0.1);
+    color: #25D366;
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.online-apply-featured-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-main);
+}
+
+.online-apply-featured-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+    font-size: 0.95rem;
+}
+
+.online-apply-featured-card .whatsapp-quick-btn {
+    max-width: 280px;
+}
+
+body.light-mode .online-apply-featured-card {
+    border-color: rgba(37, 211, 102, 0.15);
+    background: radial-gradient(circle at 10% 10%, rgba(37, 211, 102, 0.03) 0%, transparent 60%);
+}
+
+@media (max-width: 768px) {
+    .online-apply-featured-card {
+        flex-direction: column;
+        padding: 2.2rem 1.8rem;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .apply-icon-box {
+        font-size: 3.5rem;
+    }
+    .apply-content-box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-apply-featured-card h3 {
+        font-size: 1.5rem;
+    }
+    .online-apply-featured-card .whatsapp-quick-btn {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
