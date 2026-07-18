@@ -629,6 +629,97 @@ body.light-mode .cv-sample-chip:hover {
     color: #3730a3;
 }
 
+/* ── WE PROVIDE Banner ───────────────────────────────────────── */
+.we-provide-banner {
+    background: linear-gradient(160deg, #0a1628 0%, #0e2148 100%);
+    border: 1px solid rgba(35, 88, 165, 0.4);
+    border-radius: 12px;
+    padding: 1.2rem 1rem 1rem;
+    margin: 1.25rem 0 0.25rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.we-provide-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(35, 88, 165, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.we-provide-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+}
+
+.wep-line {
+    flex: 1;
+    height: 1.5px;
+    background: linear-gradient(90deg, transparent, rgba(185, 148, 68, 0.6), transparent);
+    max-width: 50px;
+}
+
+.wep-title {
+    font-size: 1.05rem;
+    font-weight: 900;
+    color: #e8f4ff;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.wep-sub {
+    font-size: 0.72rem;
+    color: rgba(200, 220, 255, 0.7);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.wep-icons-row {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.wep-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    flex: 1;
+}
+
+.wep-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid rgba(35, 88, 165, 0.8);
+    background: rgba(255, 255, 255, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #a8c8ff;
+    transition: all 0.25s ease;
+}
+
+.wep-icon-item:hover .wep-icon-circle {
+    border-color: #2358a5;
+    background: rgba(35, 88, 165, 0.25);
+    transform: scale(1.08);
+}
+
+.wep-icon-item span {
+    font-size: 0.62rem;
+    color: rgba(200, 220, 255, 0.65);
+    text-align: center;
+    line-height: 1.2;
+}
+
 /* Simple Service Card & WhatsApp Quick Button Styles */
 .simple-service-card {
     display: flex;
