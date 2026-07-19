@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khuzaifa5188.github.io/forgespark-labs/sitemap.xml
+Sitemap: https://forgesparklab.tech/sitemap.xml
