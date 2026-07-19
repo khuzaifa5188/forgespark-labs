@@ -164,10 +164,6 @@ function selectWritingService(service) {
 
 // Theme Toggle Logic
 (function initThemeToggle() {
-    const themeToggle = document.getElementById('theme-toggle');
-    if (!themeToggle) return;
-    const themeIcon = themeToggle.querySelector('i');
-    
     // Check local storage for preference
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
