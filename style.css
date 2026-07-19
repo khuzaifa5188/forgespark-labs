@@ -2854,6 +2854,104 @@ body.light-mode .back-to-top:hover {
     }
 }
 
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 242, 254, 0.2);
+    border: 2px solid #0b0f19;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 242, 254, 0.5);
+}
+
+body.light-mode ::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+body.light-mode ::-webkit-scrollbar-thumb {
+    background: rgba(14, 116, 144, 0.2);
+    border-color: #f8fafc;
+}
+body.light-mode ::-webkit-scrollbar-thumb:hover {
+    background: rgba(14, 116, 144, 0.5);
+}
+
+/* Floating WhatsApp Widget */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: 48px;
+    height: 48px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    z-index: 999;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+
+.whatsapp-widget:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+
+.wa-tooltip {
+    position: absolute;
+    left: 60px;
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-widget:hover .wa-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(5px);
+}
+
+body.light-mode .wa-tooltip {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #0f172a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-widget {
+        bottom: 1.5rem;
+        left: 1.5rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    .whatsapp-widget:hover .wa-tooltip {
+        display: none;
+    }
+}
+
+
 
 
 
