@@ -68,6 +68,25 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-180x180.png">
     <meta name="theme-color" content="#0b0f19">
+
+    <!-- Firebase Analytics -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBb5vGrTXkEO_SrLh_SFRZaQV0KyqcvOAs",
+            authDomain: "forgespark-labs.firebaseapp.com",
+            projectId: "forgespark-labs",
+            storageBucket: "forgespark-labs.firebasestorage.app",
+            messagingSenderId: "1057248609457",
+            appId: "1:1057248609457:web:211eadcfd7e57b475bce90",
+            measurementId: "G-1VRV9RYCPP"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </head>
 
 <body>
