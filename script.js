@@ -354,5 +354,27 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
 })();
 
+// Back to Top button show/hide & smooth scroll action
+(function initBackToTop() {
+    const backToTopBtn = document.getElementById('back-to-top');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+})();
+
+
 
 
