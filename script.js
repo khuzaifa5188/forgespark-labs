@@ -41,6 +41,22 @@ function handleSubmit(e) {
     const text = `Hello ForgeSpark Labs!%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Project Type:* ${project}%0A*Message:* ${message}`;
     const waLink = `https://wa.me/923189523824?text=${text}`;
 
+    // Try to save to Firebase Firestore
+    if (window.db) {
+        window.db.collection("contact_messages").add({
+            name: name,
+            email: email,
+            project: project,
+            message: message,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(() => {
+            console.log("Message successfully saved to Firebase Firestore!");
+        }).catch((error) => {
+            console.error("Error saving message to Firebase:", error);
+        });
+    }
+
+    // Still open WhatsApp as immediate contact
     window.open(waLink, '_blank');
 
     document.getElementById('form-success').style.display = 'block';
