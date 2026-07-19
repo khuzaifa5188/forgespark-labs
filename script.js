@@ -328,4 +328,31 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
 });
 
+// Scroll Spy - highlights active navigation links as user scrolls
+(function initScrollSpy() {
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navLinksItems = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150; // Offset for sticky navbar height + margins
+            const sectionHeight = section.offsetHeight;
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinksItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+})();
+
+
 

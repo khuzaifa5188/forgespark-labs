@@ -120,6 +120,11 @@ a {
     color: var(--accent-1);
 }
 
+.nav-links a.active {
+    color: var(--accent-1);
+    font-weight: 700;
+}
+
 /* Buttons */
 .btn-primary, .btn-secondary {
     padding: 0.8rem 1.5rem;
