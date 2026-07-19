@@ -1301,11 +1301,11 @@ a {
 .form-group select,
 .form-group textarea {
     width: 100%;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 0.8rem 1rem;
-    color: #fff;
+    color: var(--text-main);
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     transition: border-color 0.3s;
