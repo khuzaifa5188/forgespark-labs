@@ -685,6 +685,14 @@ body.light-mode .cv-sample-chip:hover {
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .wep-icons-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem 0.5rem;
+    }
+}
+
 .wep-icon-item {
     display: flex;
     flex-direction: column;
