@@ -204,6 +204,23 @@
                     </div>
                 </div>
 
+                
+                <div class="card glass-card team-card clickable-team" id="card-afnan"
+                    onclick="openModal('profileModalAfnan')">
+                    <div class="avatar avatar-photo">
+                        <img src="images/company/Muhammad_Afnan/Muhammad_Afnan.jpeg" alt="Muhammad Afnan" />
+                    </div>
+                    <h3>Muhammad Afnan</h3>
+                    <h4>Electrical Engineer</h4>
+                    <p>Electrical Engineering graduate from PIEAS. Specializes in Robotics, MATLAB Signal Processing, and EMG Control Systems.</p>
+                    <div class="team-tags">
+                        <span class="tag">Robotics</span><span class="tag">MATLAB</span><span class="tag">Signal Processing</span>
+                    </div>
+                    <div class="view-profile-hint">
+                        <i class="fa-solid fa-eye"></i> View Full Portfolio
+                    </div>
+                </div>
+
                 <div class="card glass-card team-card" id="card-hammad">
                     <div class="avatar">
                         <i class="fa-solid fa-user-shield"></i>
@@ -1269,6 +1286,52 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- ========== MUHAMMAD AFNAN PROFILE MODAL ========== -->
+    <div id="profileModalAfnan" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('profileModalAfnan')" aria-label="Close"><i
+                    class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-header">
+                <div class="modal-avatar">
+                    <img src="images/company/Muhammad_Afnan/Muhammad_Afnan.jpeg" alt="Muhammad Afnan" />
+                </div>
+                <div class="modal-bio">
+                    <h2>Muhammad Afnan</h2>
+                    <h4 class="modal-subtitle">Electrical Engineer | PIEAS Graduate</h4>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Academic Background</h3>
+                <p><strong>BS Electrical Engineering</strong><br>Pakistan Institute of Engineering and Applied Sciences (PIEAS), Islamabad</p>
+
+                <h3><i class="fa-solid fa-microchip"></i> Featured Projects</h3>
+                <div class="project-grid">
+                    <div class="modal-project-card">
+                        <h4>EMG Based Robotic Arm/Leg Gesture Control System</h4>
+                        <p class="modal-project-desc">
+                            Final year thesis project involving the design and development of an Electromyography (EMG) based gesture control system for robotic arms and legs.
+                        </p>
+                        <div class="team-tags">
+                            <span class="tag">Robotics</span><span class="tag">EMG</span><span class="tag">Control Systems</span>
+                        </div>
+                    </div>
+                    <div class="modal-project-card">
+                        <h4>Audio Signal Processing using MATLAB</h4>
+                        <p class="modal-project-desc">
+                            Digital Signal Processing (EE-414) term project focused on processing and analyzing audio signals using MATLAB algorithms.
+                        </p>
+                        <div class="team-tags">
+                            <span class="tag">MATLAB</span><span class="tag">DSP</span><span class="tag">Signal Processing</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
