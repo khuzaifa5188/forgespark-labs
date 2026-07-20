@@ -1,29 +1,33 @@
 // ForgeSpark Labs - Firebase Configuration
-// IMPORTANT: Replace these placeholder values with your actual Firebase project settings!
-// You can find these in the Firebase Console: Project Settings -> General -> Your apps -> SDK setup and configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBb5vGrTXkEO_SrLh_SFRZaQV0KyqcvOAs",
+  authDomain: "forgespark-labs.firebaseapp.com",
+  projectId: "forgespark-labs",
+  storageBucket: "forgespark-labs.firebasestorage.app",
+  messagingSenderId: "1057248609457",
+  appId: "1:1057248609457:web:211eadcfd7e57b475bce90",
+  measurementId: "G-1VRV9RYCPP"
 };
 
 let db = null;
+let analytics = null;
 
 try {
-    if(firebaseConfig.apiKey !== "YOUR_API_KEY") {
-        // Initialize Firebase
-        const app = firebase.initializeApp(firebaseConfig);
-        db = firebase.firestore();
-        console.log("Firebase initialized successfully.");
-    } else {
-        console.warn("Firebase is not configured! Please update firebase-init.js with your config.");
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    db = firebase.firestore();
+    
+    // Initialize Analytics if SDK is loaded
+    if (typeof firebase.analytics === "function") {
+        analytics = firebase.analytics();
+        console.log("Firebase Analytics initialized successfully.");
     }
+    
+    console.log("Firebase Database initialized successfully.");
 } catch (error) {
     console.error("Firebase initialization error:", error);
 }
 
 // Export for other scripts to use
 window.db = db;
+window.analytics = analytics;
