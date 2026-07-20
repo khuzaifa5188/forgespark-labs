@@ -2879,6 +2879,7 @@ body {
     box-shadow: 0 20px 40px var(--accent-glow);
     overflow: hidden;
     border: 4px solid #ffffff;
+    background-color: #ffffff; /* Fills empty space if aspect ratio differs */
 }
 
 .slide-img {
@@ -2887,7 +2888,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* Prevents images from being cropped */
     opacity: 0;
     animation: fadeSlide 24s infinite;
 }
