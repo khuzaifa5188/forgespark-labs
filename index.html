@@ -79,13 +79,23 @@
         </a>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#simple-services">Apply</a></li>
-            <li><a href="#writing">Writing</a></li>
-            <li><a href="#tuition">Academy</a></li>
-            <li><a href="#complex-services">Labs</a></li>
+            <li class="dropdown">
+                <a href="#about" style="cursor: pointer;">About <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 2px;"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#complex-services" style="cursor: pointer;">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 2px;"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#complex-services">Engineering Labs</a></li>
+                    <li><a href="#tuition">Academy</a></li>
+                    <li><a href="#writing">Professional Writing</a></li>
+                    <li><a href="#simple-services">Admissions &amp; Apply</a></li>
+                </ul>
+            </li>
             <li><a href="#portfolio">Work</a></li>
-            <li><a href="#team">Team</a></li>
             <li><a href="#contact" class="btn-primary">Hire Us</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Menu">
